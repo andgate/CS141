@@ -1,0 +1,1659 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq0\fcharset128 Monospaced.plain;}{\f6\fnil\fprq2\fcharset0 DejaVu Sans;}{\f7\fnil\fprq2\fcharset0 Lohit Hindi;}{\f8\fnil\fprq0\fcharset128 Lohit Hindi;}}
+{\colortbl;\red0\green0\blue0;\red250\green100\blue0;\red148\green30\blue223;\red0\green203\blue0;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033 Normal;}
+{\s15\sbasedon0\snext16\sb240\sa120\keepn\dbch\af6\dbch\af7\afs28\loch\f4\fs28 Heading;}
+{\s16\sbasedon0\snext16\sl288\slmult1\sb0\sa140 Text Body;}
+{\s17\sbasedon16\snext17\sl288\slmult1\sb0\sa140\dbch\af8 List;}
+{\s18\sbasedon0\snext18\sb120\sa120\noline\i\dbch\af8\afs24\ai\fs24 Caption;}
+{\s19\sbasedon0\snext19\noline\dbch\af8 Index;}
+}{\info{\creatim\yr2014\mo10\dy10\hr15\min29}{\revtim\yr0\mo0\dy0\hr0\min0}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern67241475}}\deftab720
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Default Style;}}
+\formshade\paperh15840\paperw12240\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch
+Gabriel Anderson, Victor Erickson}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch
+CS141& S1}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs42\rtlch \ltrch\loch\fs42
+E 3.1}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs30\rtlch \ltrch\loch\fs30
+Counter.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   A counter that records the number of clicks.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   COPYRIGHT (C) 2014 Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @author Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @since 8 October 2014}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+class}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ Counter}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+private}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+int}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ value;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Constructs a counter with an intial value of 0.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ Counter()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      value = 0;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Retrieve the counters value.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @return The value of the counter, in number of clicks.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+int}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ getValue()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+return}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ value;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Increase the counter by one click.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ click()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      value += 1;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Undoes a click.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ undo()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      value = Math.max(--value, 0);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs30\rtlch \ltrch\loch\fs30
+CounterTester.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   Tests the click and undo methods of a Counter object.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   COPYRIGHT (C) 2014 Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+  @author Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @since 8 October 2014}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+class}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ CounterTester}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+static}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ main(String[] args)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Counter counter = }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+new}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ Counter();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      counter.click();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      counter.click();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Expected value: 2"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Actual value: "}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + counter.getValue());}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      counter.undo();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+     counter.undo();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      counter.undo();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      counter.undo();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Expected value: 0"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Actual value: "}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + counter.getValue());}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs42\rtlch \ltrch\loch\fs42
+E 3.2}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs30\rtlch \ltrch\loch\fs30
+LimitCounter.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   A counter that records the number of clicks up to a limit.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   COPYRIGHT (C) 2014 Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @author Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @since 8 October 2014}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+class}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ LimitCounter}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+private}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+int}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ value;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+private}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+int}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ limit;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Constructs a counter with an intial value of 0 and no limit.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ LimitCounter()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      value = 0;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      limit = 0;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Constructs a counter with an intial value of 0 and the given limit.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+     @param initialLimit The number of clicks this counter can perform. 0 means no limit.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ LimitCounter(}{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+int}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ initialLimit)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+this}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      setLimit(initialLimit);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Set a new limit for the counter.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @param newLimit The number of clicks this counter can perform. 0 means no limit.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ setLimit(}{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+int}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ newLimit)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      limit = newLimit;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Retrieve the counters value.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @return The value of the counter, in number of clicks.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+int}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ getValue()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+return}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ value;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Increase the counter by one click, without exceding the limit.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ click()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+if}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+(limit > 0)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+         value = Math.min(++value, limit);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Undoes a click.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ undo()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      value = Math.max(--value, 0);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs30\rtlch \ltrch\loch\fs30
+LimitCounterTester.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   Tests the setLimit method of a LimitCounter object.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   COPYRIGHT (C) 2014 Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @author Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @since 8 October 2014}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+class}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ LimitCounterTester}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+static}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ main(String[] args)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line \line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      LimitCounter counter = }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+new}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ LimitCounter(4); }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+// this constructors calls setLimit(4)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      counter.click();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+     counter.click();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      counter.click();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      counter.click();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      counter.click();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Expected value: 4"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Actual value: "}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + counter.getValue());}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs42\rtlch \ltrch\loch\fs42
+E 3.3+3.4}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs30\rtlch \ltrch\loch\fs30
+BankAccount.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   A bank account that allows deposits, withdraws, and interest gain to it's balance.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   COPYRIGHT (C) 2014 Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @author Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @since 8 October 2014}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+class}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ BankAccount}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+private}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ balance;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Constructs a BankAccount with a balance of 0.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ BankAccount()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      balance = 0;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Constructs a BankAccount with the given balance.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @param initialBalance The balance the bank account starts with, in dollars.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ BankAccount(}{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ initialBalance)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      balance = initialBalance;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Deposit the given amount to the bank account.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+     @param amount The amount to add to the current balance, in dollars.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ deposit(}{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ amount)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      balance += amount;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Withdraw the given amount from the bank account.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @param amount The amount to remove from the current balance, in dollars.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ withdraw(}{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ amount)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      balance -= amount;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Retrieve the current balance from the bank account.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @return The current balance in the bank account, in dollars.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ getBalance()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+return}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ balance;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+  }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Add a given interest into the balance at the given rate.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @param rate The rate of interest, in percent.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ addInterest(}{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ rate)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ decimalRate = rate / 100.0; }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+// change the rate from percent to a decimal value.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      balance += balance * decimalRate;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs30\rtlch \ltrch\loch\fs30
+BankAccountTester.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   Tests withdrawing and depositing of a BankAccount object.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   COPYRIGHT (C) 2014 Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @author Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @since 8 October 2014}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+class}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ BankAccountTester}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+static}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ main(String[] args)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      BankAccount checking = }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+new}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ BankAccount();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      checking.deposit(1000);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      checking.withdraw(500);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+     checking.withdraw(400);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Actual balance: "}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + checking.getBalance());}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Expected balance: 100.0"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs30\rtlch \ltrch\loch\fs30
+BankAccountInterestTester.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   Tests addInterest method of a BankAccount object.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   COPYRIGHT (C) 2014 Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @author Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @since 8 October 2014}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+class}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ BankAccountInterestTester}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+static}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ main(String[] args)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      BankAccount checking = }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+new}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ BankAccount(1000);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      checking.addInterest(10);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Actual balance: "}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + checking.getBalance());}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Expected balance: 1100.0"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs42\rtlch \ltrch\loch\fs42
+E 3.5}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs30\rtlch \ltrch\loch\fs30
+SavingsAccount.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   A savings account that allows deposits, withdraws, and interest gain to it's balance.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   COPYRIGHT (C) 2014 Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @author Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @since 8 October 2014}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+class}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ SavingsAccount}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+private}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ balance;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+private}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ interest;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Constructs a SavingsAccount with a balance of 0 and the given interest rate.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ SavingsAccount()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      balance = 0;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      interest = 0;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Constructs a SavingsAccount with the given balance and given interest rate.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @param initialBalance The balance the savings account starts with, in dollars.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @param initialInterest The interest rate of the savings account, in percent.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ SavingsAccount(}{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ initialBalance, }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ intialInterest)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      balance = initialBalance;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      interest = intialInterest;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Deposit the given amount to the savings account.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @param amount The amount to add to the current balance, in dollars.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ deposit(}{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ amount)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      balance += amount;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Withdraw the given amount from the savings account.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @param amount The amount to remove from the current balance, in dollars.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ withdraw(}{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ amount)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      balance -= amount;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Retrieve the current balance from the savings account.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @return The current balance in the savings account, in dollars.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ getBalance()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+return}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ balance;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Add the savings account's interest into the balance.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ addInterest()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ decimalRate = interest / 100.0; }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+// change the rate from percent to a decimal value.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      balance += balance * decimalRate;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs30\rtlch \ltrch\loch\fs30
+SavingsAccountTester.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   Tests the addInterest method of a SavingsAccount object.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   COPYRIGHT (C) 2014 Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @author Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @since 8 October 2014}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+class}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ SavingsAccountTester}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+static}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ main(String[] args)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      SavingsAccount savings = }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+new}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ SavingsAccount(1000, 10);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      savings.addInterest();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Actual balance: "}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + savings.getBalance());}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Expected balance: 1100.0"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs42\rtlch \ltrch\loch\fs42
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs42\rtlch \ltrch\loch\fs42
+E 3.6 + P 3.1}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs30\rtlch \ltrch\loch\fs30
+CashRegister.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   Cash register that totals up sales and determines the change due.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   COPYRIGHT (C) 2014 Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @author Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @since 8 October 2014}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+class}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ CashRegister}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+private}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ purchase;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+private}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ payment;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+private}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ String receipt;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+private}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+int}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ itemCount;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Constructs a CashRegister with no purchases and no payments.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ CashRegister()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      purchase = 0;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      payment = 0;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      itemCount = 0;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      receipt = }{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+""}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Processes the purchase of an item.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @param amount Cost of the purchase, in dollars.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ recordPurchase(}{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ amount)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+     purchase += amount;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      receipt = receipt.concat(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"$"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + amount  + }{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+" item purchased.\\n"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      itemCount += 1;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Processes the payment of an item.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @param amount The amount of the payment, in dollars.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ receivePayment(}{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ amount)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      payment += amount;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      receipt = receipt.concat(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"$"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + amount + }{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+" paid.\\n"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+     Determines the amount of change due and resets the cash register for the next customer.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @return The change due to the customer.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ giveChange()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ change = payment - purchase;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      receipt = receipt.concat(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"\\nItem count: "}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + itemCount + }{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"\\n"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+                       .concat(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Total cost: $"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + purchase + }{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"\\n"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+                       .concat(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Total paid: $"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + payment + }{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"\\n"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+                       .concat(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Change due: $"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + change + }{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"\\n"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      payment = 0;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      purchase = 0;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      itemCount = 0;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+return}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ change;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Prints the current receipt to the command line and starts a new one for the next customer.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ printReceipt()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(receipt);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+     receipt = }{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+""}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Gives the number of items purchased in this order.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @return The item count.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+int}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ getItemCount()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+return}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ itemCount;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs30\rtlch \ltrch\loch\fs30
+CashRegisterTester.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   Tests a CashRegister object with an imaginary customer.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   COPYRIGHT (C) 2014 Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @author Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @since 8 October 2014}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+class}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ CashRegisterTester}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+static}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ main(String[] args)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      CashRegister register = }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+new}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ CashRegister();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      register.recordPurchase(29.50);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      register.recordPurchase(9.25);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      register.receivePayment(50.00);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Expected item count: 2 items"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Actual item count: "}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + register.getItemCount() + }{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+" items"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ change = register.giveChange();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Expected receipt:"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"$29.5 item purchased."}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"$9.25 item purchased."}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"$50 paid."}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"\\nItem count 2"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Total cost: $38.75"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Total paid: $50.0"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Change due: $11.25"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line \line \line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"\\nActual receipt:"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      register.printReceipt();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Expected Change: $11.25"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Actual Change: $"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + change);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs42\rtlch \ltrch\loch\fs42
+E3.9}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs30\rtlch \ltrch\loch\fs30
+Car.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   A car that can drive, refuel, and can give odometer and gas tank readings.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   COPYRIGHT (C) 2014 Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @author Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @since 8 October 2014}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+class}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ Car}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ mpg;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ odometer;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ gasInTank;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Constructs a car with no gas and no miles driven, that burns gas at the mileage given.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @param initialMileage The mileage the car gets when driving, in miles per gallon. }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ Car(}{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ initialMileage)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      mileage = initialMileage;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      odometer = 0;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      gasInTank = 0;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Add the given amount of gas to the gas tank.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @param gas Amount of gas to add to the tank, in gallons.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ addGas(}{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ gas)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      gasInTank += gas;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Drives the car a certain distance, burning gas in the process.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @param distance Distance to drive the car.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ drive(}{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ distance)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      odometer += distance;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+     gasInTank -= distance / mileage;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+  \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Get the total distance the car has traveled from the odometer.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @return The total distance the car has traveled, in miles.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ getOdometer()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+return}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ odometer;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Get the mileage of the car.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @return The mileage of the car, in miles per gallon.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ getMileage()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+return}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ mileage;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Get the volume of gas in the tank.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      @return The gas in the tank, in gallons.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+    */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ getGasInTank()}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+return}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ gasInTank;}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs30\rtlch \ltrch\loch\fs30
+CarTester.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+/**}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   Test drives a Car object.}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   COPYRIGHT (C) 2014 Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @author Gabriel Anderson, Victor Erickson}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   @since 8 October 2014}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf2\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ */}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+class}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ CarTester}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+static}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ main(String[] args)}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      Car myHybrid = }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+new}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ Car(50);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      myHybrid.addGas(20);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      myHybrid.drive(100);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf3\afs30\rtlch \ltrch\loch\fs24\loch\f5
+double}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ gasLeft = myHybrid.getGasInTank();}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Expected gas left: 18"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Actual gas left: "}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + gasLeft);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      }{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Expected odometer reading: 100"}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+);}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+      System.out.println(}{\cf4\afs30\rtlch \ltrch\loch\fs24\loch\f5
+"Actual odometer reading: "}{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+ + myHybrid.getOdometer());}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\afs30\rtlch \ltrch\loch\fs30
+\line }{\cf1\afs30\rtlch \ltrch\loch\fs24\loch\f5
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs30\rtlch \ltrch\loch\fs30
+
+\par }
