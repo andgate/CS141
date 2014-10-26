@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
-   Runs a test on a Student object.<br>
+   Runs tests on different Student objects.<br>
    COPYRIGHT &copy; 2014 Gabriel Anderson. All Rights Reserved.
    @author Gabriel Anderson
    @since 13 October 2014
@@ -9,17 +9,33 @@ import java.util.Scanner;
  */
 public class StudentTester
 {
-   public static final String FIRST_STUDENT_SCORES = "0 100 82 91 99 100 100 14 92 93 ";
-   public static final String SECOND_STUDENT_SCORES = "-1 15.77 101 1 ";
-   public static final String THIRD_STUDENT_SCORES = "0";
-   public static final String INPUT_SCORES = FIRST_STUDENT_SCORES + SECOND_STUDENT_SCORES + THIRD_STUDENT_SCORES;
+   // Data taken from excel spreadsheet.
+   // For actual values, check out the spread sheet.
+   public static final String FIRST_STUDENT_SCORES
+      = "0 100 82 91 99 100 100 14 92 93 ";
+   public static final String SECOND_STUDENT_SCORES
+      = "-1 15.77 101 qwerty $54sfd ";
+   public static final String THIRD_STUDENT_SCORES
+      = "0";
+   public static final String INPUT_SCORES
+      = FIRST_STUDENT_SCORES + SECOND_STUDENT_SCORES + THIRD_STUDENT_SCORES;
+   
+   public static final String EXPECTED_OUTPUT_LABEL
+      = "\nExpected student info: ";
+   public static final String ACTUAL_OUTPUT_LABEL
+      = "\nActual student info: "; 
+   
+   public static final String FIRST_STUDENT_NAME = "First Student";
+   public static final String SECOND_STUDENT_NAME = "Second Student";
+   public static final String THIRD_STUDENT_NAME = "First Student";
    
    public static void main(String[] args)
    {
       Scanner input = new Scanner(INPUT_SCORES);
       
-      // First student tests valid input
-      Student firstStudent = new Student("First Student");
+      // First student tests valid input.
+      // Twice with 5 scores each.
+      Student firstStudent = new Student(FIRST_STUDENT_NAME);
       
       firstStudent.inputData(input);
       firstStudent.inputData(input);
@@ -27,12 +43,7 @@ public class StudentTester
       firstStudent.inputData(input);
       firstStudent.inputData(input);
       
-      /*System.out.println("Expected student info:"
-                       + "\nName: First Student"
-                    + "\nQuiz count: 3"
-                    + "\nTotal points: 220"
-                    + "\nAverage score: 73.33");*/
-      System.out.println("\nActual student info:" + firstStudent.toString() + "\n");
+      System.out.println(ACTUAL_OUTPUT_LABEL + firstStudent.toString() + "\n");
       
       firstStudent.inputData(input);
       firstStudent.inputData(input);
@@ -40,43 +51,24 @@ public class StudentTester
       firstStudent.inputData(input);
       firstStudent.inputData(input);
       
-      /*System.out.println("Expected student info:"
-                       + "\nName: First Student"
-                    + "\nQuiz count: 3"
-                    + "\nTotal points: 220"
-                    + "\nAverage score: 73.33");*/
-      System.out.println("\nActual student info:" + firstStudent.toString() + "\n");
+      System.out.println(ACTUAL_OUTPUT_LABEL + firstStudent.toString() + "\n");
 
       
-      // Second student tests bad inputs
-      Student secondStudent = new Student("Second Student");
+      // Second student tests bad inputs.
+      // Bad input is rejected, so tests no inputted test scores as well.
+      Student secondStudent = new Student(SECOND_STUDENT_NAME);
       
       secondStudent.inputData(input);
       secondStudent.inputData(input);
       secondStudent.inputData(input);
       secondStudent.inputData(input);
+      secondStudent.inputData(input);
       
-      /*System.out.println("Expected student info:"
-                       + "\nName: Second Student"
-                    + "\nQuiz count: 0"
-                    + "\nTotal points: 0"
-                    + "\nAverage score: 0.0");*/
-      System.out.println("\nActual student info:" + secondStudent.toString() + "\n");
+      System.out.println(ACTUAL_OUTPUT_LABEL + secondStudent.toString() + "\n");
       
-      // Third student, tests input of zero and no input
-      Student thirdStudent = new Student("Third Student");
-      
-      // No input
-      System.out.println("\nActual student info:" + thirdStudent.toString() + "\n");
-      
+      // Third student, tests input when only one quiz score.
+      Student thirdStudent = new Student(THIRD_STUDENT_NAME);
       thirdStudent.inputData(input);
-      
-      // Input is zero
-      /*System.out.println("Expected student info:"
-                       + "\nName: Third Student"
-                    + "\nQuiz count: 7"
-                    + "\nTotal points: 700"
-                    + "\nAverage score: 100.0");*/
-      System.out.println("\nActual student info:" + thirdStudent.toString() + "\n");
+      System.out.println(ACTUAL_OUTPUT_LABEL + thirdStudent.toString() + "\n");
    }
 }

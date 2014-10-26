@@ -56,37 +56,39 @@ public class Student
    // Constants 
    private static final String BLANK = "";
    private static final String NO_NAME = BLANK;
-   private static final String BLANK_DATA = "-";
+   private static final String COMMA_SPACE = ", ";
+   private static final String PERIOD = ".";
+   private static final String BLANK_DATA = String.format("%5c", '-');
    private static final String INPUT_DATA_ECHO 
       = "Please enter the grade number, from 0 and 100: ";
    private static final String OUTPUT_NAME_LABEL
-      = "\nStudent's full name: ";
+      = "\nStudent's full name:     ";
    private static final String OUTPUT_NUMBER_OF_QUIZZES_LABEL
       = "\nNumber of quizzes taken: ";
    private static final String OUTPUT_HIGHEST_QUIZ_SCORE_LABEL
-      = "\nHighest quiz score: ";
+      = "\nHighest quiz score:      ";
    private static final String OUTPUT_LOWEST_QUIZ_SCORE_LABEL
-      = "\nLowest quiz score: ";
+      = "\nLowest quiz score:       ";
    private static final String OUTPUT_TOTAL_QUIZ_SCORE_LABEL
-      = "\nTotal quiz score: ";
+      = "\nTotal quiz score:        ";
    private static final String OUTPUT_MEAN_LABEL
-      = "\nMean: ";
+      = "\nMean:                    ";
    private static final String OUTPUT_SUM_OF_SQUARES_LABEL
-      = "\nSum of squares: ";
+      = "\nSum of squares:          ";
    private static final String OUTPUT_VARIANCE_LABEL
-      = "\nVariance: ";
+      = "\nVariance:                ";
    private static final String OUTPUT_STANDARD_DEVIATION_LABEL
-      = "\nStandard deviation: ";
+      = "\nStandard deviation:      ";
    private static final String OUTPUT_NUMBER_OF_A_GRADES_LABEL
-      = "\nNumber of A's: ";
+      = "\nNumber of A's:           ";
    private static final String OUTPUT_NUMBER_OF_B_GRADES_LABEL
-      = "\nNumber of B's: ";
+      = "\nNumber of B's:           ";
    private static final String OUTPUT_NUMBER_OF_C_GRADES_LABEL
-      = "\nNumber of C's: ";
+      = "\nNumber of C's:           ";
    private static final String OUTPUT_NUMBER_OF_D_GRADES_LABEL
-      = "\nNumber of D's: ";
+      = "\nNumber of D's:           ";
    private static final String OUTPUT_NUMBER_OF_F_GRADES_LABEL
-      = "\nNumber of F's: ";
+      = "\nNumber of F's:           ";
    private static final String OUTPUT_SCORES_ENTERED_LABEL
       = "\nScores entered: ";
    
@@ -218,7 +220,7 @@ public class Student
       // because this way caches the information for later.
       calculate();
       
-      scoresEntered += grade + " ";
+      scoresEntered += grade + COMMA_SPACE;
       
       return true;
    }
@@ -283,7 +285,9 @@ public class Student
     */
    public String getScoresEntered()
    {
-      return scoresEntered;
+      int start = 0;
+      int end = scoresEntered.length() - COMMA_SPACE.length();
+      return scoresEntered.substring(start, end) + PERIOD;
    }
    
    /**
@@ -371,14 +375,26 @@ public class Student
    }
    
    /**
-      Get the student's information in a string format intended for printing.
+      Return's a string containing the student's data on record.
+      Formatted for System.out.print.
       <br>The string looks like this:
-      <br>Name: <i>&lt;student_name&gt;</i>
-      <br>Quiz count: <i>&lt;number_of_quizzes_entered&gt;</i>
-      <br>Total score: <i>&lt;total_points&gt;</i>
-      <br>Average score: <i>&lt;average_score&gt;</i>
-      @return The student's information in a nicely formatted string.
-      @todo empty data should print the value as "-"
+      <br>Student's full name:     <i>&lt;student's name&gt;</i>
+      <br>Number of quizzes taken: <i>&lt;number of&gt;</i>
+      <br>Total quiz score:        <i>&lt;total score&gt;</i>
+      <br>Lowest quiz score:       <i>&lt;lowest score&gt;</i>
+      <br>Highest quiz score:      <i>&lt;highest score&gt;</i>
+      <br>Mean:                    <i>&lt;mean&gt;</i>
+      <br>Sum of Squares:          <i>&lt;sum of squares&gt;</i>
+      <br>Variance:                <i>&lt;variance&gt;</i>
+      <br>Standard deviation:      <i>&lt;standard deviation&gt;</i>
+      <br>Scores entered:          <i>&lt;list of scores&gt;</i>
+      <br>Number of A's:           <i>&lt;number of&gt;</i>
+      <br>Number of B's:           <i>&lt;number of&gt;</i>
+      <br>Number of C's:           <i>&lt;number of&gt;</i>
+      <br>Number of D's:           <i>&lt;number of&gt;</i>
+      <br>Number of F's:           <i>&lt;number of&gt;</i>
+      <br>Also, a "-" takes the place of missing data.
+      @return The formatted string for showing the student's data. 
     */
    @Override
    public String toString()
@@ -386,7 +402,20 @@ public class Student
       String studentDataStr = studentDataToString();
       String letterGradesStr = letterGradesToString();
       
-      String output = studentDataStr + letterGradesStr;
+      // "Scores entered" is a little list at the end.
+      // Decided against formatting this, as the list of numbers
+      // doesn't look nice lined up with the rest of the data.
+      String scoresEnteredStr = OUTPUT_SCORES_ENTERED_LABEL;
+      if(getNumberOfQuizzes() == 0)
+      {
+         scoresEnteredStr += String.format("%14s", BLANK_DATA);
+      }
+      else
+      {
+         scoresEnteredStr += getScoresEntered();
+      }
+      
+      String output = studentDataStr + letterGradesStr + scoresEnteredStr;
       
       return output;
    }
@@ -394,8 +423,20 @@ public class Student
    /**
       Return's a string containing the student's data on record.
       Formatted for System.out.print.
+      <br>The string looks like this:
+      <br>Student's full name:     <i>&lt;student's name&gt;</i>
+      <br>Number of quizzes taken: <i>&lt;number of&gt;</i>
+      <br>Total quiz score:        <i>&lt;total score&gt;</i>
+      <br>Lowest quiz score:       <i>&lt;lowest score&gt;</i>
+      <br>Highest quiz score:      <i>&lt;highest score&gt;</i>
+      <br>Mean:                    <i>&lt;mean&gt;</i>
+      <br>Sum of Squares:          <i>&lt;sum of squares&gt;</i>
+      <br>Variance:                <i>&lt;variance&gt;</i>
+      <br>Standard deviation:      <i>&lt;standard deviation&gt;</i>
+      <br>Scores entered:          <i>&lt;list of scores&gt;</i>
+      <br>Also, a "-" takes the place of missing data.
       @return The formatted string for showing the student's data. 
-   */
+    */
    private String studentDataToString()
    {
       String nameStr = OUTPUT_NAME_LABEL;
@@ -412,7 +453,6 @@ public class Student
       String sumOfSquaresStr = OUTPUT_SUM_OF_SQUARES_LABEL;
       String varianceStr = OUTPUT_VARIANCE_LABEL;
       String standardDeviationStr = OUTPUT_STANDARD_DEVIATION_LABEL;
-      String scoresEnteredStr = OUTPUT_SCORES_ENTERED_LABEL;
       
       // if no quizzes, mask the strings
       if(getNumberOfQuizzes() == 0)
@@ -425,19 +465,17 @@ public class Student
          sumOfSquaresStr += BLANK_DATA;
          varianceStr += BLANK_DATA;
          standardDeviationStr += BLANK_DATA;
-         scoresEnteredStr += BLANK_DATA;
       }
       else
       {
-         numberOfQuizzesStr += getNumberOfQuizzes();
-         totalQuizScoreStr += getTotalQuizScore();
-         lowValueStr += getLowestQuizScore();
-         highValueStr += getHighestQuizScore();
-         meanStr += doubleDecimal.format(getMean());
-         sumOfSquares += getSumOfSquares();
-         varianceStr += tripleDecimal.format(getVariance());
-         standardDeviationStr += tripleDecimal.format(getStandardDeviation());
-         scoresEnteredStr += scoresEntered;
+         numberOfQuizzesStr += String.format("%5d", getNumberOfQuizzes());
+         totalQuizScoreStr += String.format("%5d", getTotalQuizScore());
+         lowValueStr += String.format("%5d", getLowestQuizScore());
+         highValueStr += String.format("%5d", getHighestQuizScore());
+         meanStr += String.format("%8.2f", getMean());
+         sumOfSquaresStr += String.format("%5d", getSumOfSquares());
+         varianceStr += String.format("%9.3f", getVariance());
+         standardDeviationStr += String.format("%9.3f", getStandardDeviation());
       }
       
       String studentDataString = nameStr;
@@ -446,19 +484,24 @@ public class Student
       studentDataString += lowValueStr;
       studentDataString += highValueStr;
       studentDataString += meanStr;
-      studentDataString += sumOfSquares;
+      studentDataString += sumOfSquaresStr;
       studentDataString += varianceStr;
       studentDataString += standardDeviationStr;
-      studentDataString += scoresEnteredStr;
       
       return studentDataString;
    }
    
    /**
-      Returns a formatted string for displaying the number of
-      letter grades a student has earned.
-      Formatted for System.out.println.
-      @return Formatted 
+      Return's a string containing the student's data on record.
+      Formatted for System.out.print.
+      <br>The string looks like this:
+      <br>Number of A's:           <i>&lt;number of&gt;</i>
+      <br>Number of B's:           <i>&lt;number of&gt;</i>
+      <br>Number of C's:           <i>&lt;number of&gt;</i>
+      <br>Number of D's:           <i>&lt;number of&gt;</i>
+      <br>Number of F's:           <i>&lt;number of&gt;</i>
+      <br>Also, a "-" takes the place of missing data.
+      @return The formatted string for showing the student's data. 
     */
    private String letterGradesToString()
    {
@@ -466,27 +509,27 @@ public class Student
       // Use BLANK_DATA to mask 0 entries.
       numberOfAGradesStr += getNumberOfAGrades() == 0
                               ? BLANK_DATA
-                              : getNumberOfAGrades();
+                              : String.format("%5d", getNumberOfAGrades());
       
       String numberOfBGradesStr = OUTPUT_NUMBER_OF_B_GRADES_LABEL;
       numberOfBGradesStr += getNumberOfBGrades() == 0
                               ? BLANK_DATA
-                              : getNumberOfBGrades();
+                              : String.format("%5d", getNumberOfBGrades());
                                     
       String numberOfCGradesStr = OUTPUT_NUMBER_OF_C_GRADES_LABEL;
       numberOfCGradesStr += getNumberOfCGrades() == 0
                               ? BLANK_DATA
-                              : getNumberOfCGrades();
+                              : String.format("%5d", getNumberOfCGrades());
                                     
       String numberOfDGradesStr = OUTPUT_NUMBER_OF_D_GRADES_LABEL;
       numberOfDGradesStr += getNumberOfDGrades() == 0
                               ? BLANK_DATA
-                              : getNumberOfDGrades();
+                              : String.format("%5d", getNumberOfDGrades());
                               
       String numberOfFGradesStr = OUTPUT_NUMBER_OF_F_GRADES_LABEL;
       numberOfFGradesStr += getNumberOfFGrades() == 0
                               ? BLANK_DATA
-                              : getNumberOfFGrades();
+                              : String.format("%5d", getNumberOfFGrades());
                                     
       String letterGradesStr = numberOfAGradesStr;
       letterGradesStr += numberOfBGradesStr;
@@ -597,7 +640,7 @@ public class Student
       Calculates the variance and updates the instance variable.
       If the number of quizzes is one, just sets the variance
       to 0.0.
-      <p>mean = (sumOfSquares - mean) / (numberOfQuizzes - 1)
+      <p>mean = (sumOfSquares - (mean^2 * numberOfQuizzes) ) / (numberOfQuizzes - 1)
     */
    private void calculateVariance()
    {  
@@ -605,7 +648,8 @@ public class Student
       // as that will result in a division by zero.
       if(numberOfQuizzes > 1)
       {
-         variance = ( ((double)sumOfSquares) - mean ) / ((double)numberOfQuizzes - 1.0);
+         variance = ( ((double)sumOfSquares) - (mean*mean*numberOfQuizzes) )
+                  / ((double)numberOfQuizzes - 1.0);
       }
       else
       {
