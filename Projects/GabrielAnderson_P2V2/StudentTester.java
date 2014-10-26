@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class StudentTester
 {
    public static final String FIRST_STUDENT_SCORES = "0 100 82 91 99 100 100 14 92 93 ";
-   public static final String SECOND_STUDENT_SCORES = "-1 15.77 101 ";
+   public static final String SECOND_STUDENT_SCORES = "-1 15.77 101 1 ";
    public static final String THIRD_STUDENT_SCORES = "0";
    public static final String INPUT_SCORES = FIRST_STUDENT_SCORES + SECOND_STUDENT_SCORES + THIRD_STUDENT_SCORES;
    
@@ -27,11 +27,11 @@ public class StudentTester
       firstStudent.inputData(input);
       firstStudent.inputData(input);
       
-      System.out.println("Expected student info:"
+      /*System.out.println("Expected student info:"
                        + "\nName: First Student"
                     + "\nQuiz count: 3"
                     + "\nTotal points: 220"
-                    + "\nAverage score: 73.33");
+                    + "\nAverage score: 73.33");*/
       System.out.println("\nActual student info:" + firstStudent.toString() + "\n");
       
       firstStudent.inputData(input);
@@ -40,11 +40,11 @@ public class StudentTester
       firstStudent.inputData(input);
       firstStudent.inputData(input);
       
-      System.out.println("Expected student info:"
+      /*System.out.println("Expected student info:"
                        + "\nName: First Student"
                     + "\nQuiz count: 3"
                     + "\nTotal points: 220"
-                    + "\nAverage score: 73.33");
+                    + "\nAverage score: 73.33");*/
       System.out.println("\nActual student info:" + firstStudent.toString() + "\n");
 
       
@@ -55,25 +55,28 @@ public class StudentTester
       secondStudent.inputData(input);
       secondStudent.inputData(input);
       secondStudent.inputData(input);
-      secondStudent.inputData(input);
       
-      System.out.println("Expected student info:"
+      /*System.out.println("Expected student info:"
                        + "\nName: Second Student"
                     + "\nQuiz count: 0"
                     + "\nTotal points: 0"
-                    + "\nAverage score: 0.0");
+                    + "\nAverage score: 0.0");*/
       System.out.println("\nActual student info:" + secondStudent.toString() + "\n");
       
-      // Issac Newton, the star student.
+      // Third student, tests input of zero and no input
       Student thirdStudent = new Student("Third Student");
+      
+      // No input
+      System.out.println("\nActual student info:" + thirdStudent.toString() + "\n");
       
       thirdStudent.inputData(input);
       
-      System.out.println("Expected student info:"
+      // Input is zero
+      /*System.out.println("Expected student info:"
                        + "\nName: Third Student"
                     + "\nQuiz count: 7"
                     + "\nTotal points: 700"
-                    + "\nAverage score: 100.0");
+                    + "\nAverage score: 100.0");*/
       System.out.println("\nActual student info:" + thirdStudent.toString() + "\n");
    }
 }

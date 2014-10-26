@@ -2,12 +2,28 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
-   A class representing a Student's record, that is, the student's name,
-   total score of all their quizzes, and the amount of quizzes they've taken.<br>
-   COPYRIGHT &copy; 2014 Gabriel Anderson. All Rights Reserved.
+   A class representing a Student's record, that is, the student's name, and
+   detailed statistics regarding their grade.<br>
+   v2.0 Changes<br>
+   <ul>
+      <li>Default constructor added</li>
+      <li>inputData(Scanner in) method added, for making it easier to enter grades.</li>
+      <li>addScore(int score) method changed to addGrade(int grade).</li>
+      <li>addGrade method only works with grades from 0 to 100.</li>
+      <li>toString method include much more information than before.</li>
+      <li>getAverage() method changed to getMean().</li>
+      <li>getSumOfSquares(), getVariance(), getStandardDeviation().</li>
+      <li>Different methods to get the number of quizzes earning a specific letter grade</li>
+      <li>getTotalScore() was renamed to getTotalQuizScore().</li>
+      <li>getQuizCount() was renamed to getNumberOfQuizzes().</li>
+      <li>setName(String newName) method introduced.</li>
+      <li>getScores() method introduced, so the scores entered are kept track of.</li>
+   </ul>
+   All of these changes were backed up by a thorough testing procedure.</br>
+   <p>COPYRIGHT &copy; 2014 Gabriel Anderson. All Rights Reserved.
    @author Gabriel Anderson
    @since 13 October 2014
-   @version 1.0
+   @version 2.0
  */
 public class Student
 {
@@ -24,12 +40,12 @@ public class Student
    private int numberOfQuizzes;
    private int highValue;
    private int lowValue;
-   private String scoresEntered;
    private int totalQuizScore;
    private double mean;
    private int sumOfSquares;
    private double variance;
    private double standardDeviation;
+   private String scoresEntered;
    
    private int numberOfAGrades;
    private int numberOfBGrades;
@@ -42,7 +58,7 @@ public class Student
    private static final String NO_NAME = BLANK;
    private static final String BLANK_DATA = "-";
    private static final String INPUT_DATA_ECHO 
-      = "Please enter the grade number, between 0 and 100: ";
+      = "Please enter the grade number, from 0 and 100: ";
    private static final String OUTPUT_NAME_LABEL
       = "\nStudent's full name: ";
    private static final String OUTPUT_NUMBER_OF_QUIZZES_LABEL
@@ -51,12 +67,12 @@ public class Student
       = "\nHighest quiz score: ";
    private static final String OUTPUT_LOWEST_QUIZ_SCORE_LABEL
       = "\nLowest quiz score: ";
-   private static final String OUTPUT_SCORES_ENTERED_LABEL
-      = "\nScores entered: ";
    private static final String OUTPUT_TOTAL_QUIZ_SCORE_LABEL
       = "\nTotal quiz score: ";
    private static final String OUTPUT_MEAN_LABEL
       = "\nMean: ";
+   private static final String OUTPUT_SUM_OF_SQUARES_LABEL
+      = "\nSum of squares: ";
    private static final String OUTPUT_VARIANCE_LABEL
       = "\nVariance: ";
    private static final String OUTPUT_STANDARD_DEVIATION_LABEL
@@ -71,6 +87,8 @@ public class Student
       = "\nNumber of D's: ";
    private static final String OUTPUT_NUMBER_OF_F_GRADES_LABEL
       = "\nNumber of F's: ";
+   private static final String OUTPUT_SCORES_ENTERED_LABEL
+      = "\nScores entered: ";
    
    private static final int LOWEST_GRADE = 0;
    private static final int HIGHEST_GRADE = 100;
@@ -78,7 +96,7 @@ public class Student
    private static final int INITIAL_NUMBER_OF_QUIZZES = 0;
    private static final int INITIAL_HIGH_VALUE = 0;
    private static final int INITIAL_LOW_VALUE = 0;
-   private static final String INITIAL_SCORES_ENTERED = "";
+   private static final String INITIAL_SCORES_ENTERED = BLANK;
    private static final int INITIAL_TOTAL_QUIZ_SCORE = 0;
    private static final double INITIAL_MEAN = 0.0;
    private static final int INITIAL_SUM_OF_SQUARES = 0;
@@ -106,7 +124,7 @@ public class Student
    private static final DecimalFormat tripleDecimal = new DecimalFormat("0.000");
    
    /**
-      Constructs an new student, with no data entered.
+      Constructs an student with a name, with no quizzes taken.
     */
    public Student()
    {
@@ -114,7 +132,7 @@ public class Student
       numberOfQuizzes = INITIAL_NUMBER_OF_QUIZZES;
       highValue = INITIAL_HIGH_VALUE;
       lowValue = INITIAL_LOW_VALUE;
-      String scoresEntered = INITIAL_SCORES_ENTERED;
+      scoresEntered = INITIAL_SCORES_ENTERED;
       totalQuizScore = INITIAL_TOTAL_QUIZ_SCORE;
       mean = INITIAL_MEAN;
       sumOfSquares = INITIAL_SUM_OF_SQUARES;
@@ -130,7 +148,7 @@ public class Student
    
       
    /**
-      Constructs an new student.
+      Constructs an student with a name, with no quizzes taken.
       @param newName The name of the new student.
     */
    public Student(String newName)
@@ -139,25 +157,31 @@ public class Student
       setName(newName);
    }
    
-   
+   /**
+      Reads the next input for the given scanner, throwing away invalid input.
+      Valid input is an integer ranging from 0 to 100.
+      @param in The Scanner object to use for input.
+      @return True if score was entered, false if input was invalid.
+    */
    public boolean inputData(Scanner in)
    {
       System.out.println(INPUT_DATA_ECHO);
       
-      if(!in.hasNextInt())
+      if(in.hasNextInt())
       {
-         return false;
+         int grade = in.nextInt();
+         return addGrade(grade);
       }
       
-      int grade = in.nextInt();
+      // discard the current input
+      in.next();
       
-      
-      
-      return addGrade(grade);
+      return false;
    }
    
    /**
-      Add a quiz score to the student's record.
+      Add a grade to the student's record, rejecting invalid grades.
+      A valid grade lies in the range of 0 to 100.
       @param grade The score to add to the student's record, out of a hundred.
       @return False if the grade is rejected, true if the grade is accepted.
     */
@@ -187,6 +211,11 @@ public class Student
       LetterGrade letterGrade = getLetterGrade(grade);
       addLetterGrade(letterGrade);
       
+      // Because the student's information has changed
+      // a call to calulcate is needed.
+      // This is better than calling calculate when the
+      // mean or standard deviation is requested,
+      // because this way caches the information for later.
       calculate();
       
       scoresEntered += grade + " ";
@@ -203,6 +232,10 @@ public class Student
       return name;
    }
    
+   /**
+      Sets the student's name.
+      @param newName The name of the student.
+    */
    public void setName(String newName)
    {
       name = newName;
@@ -226,16 +259,28 @@ public class Student
       return totalQuizScore;
    }
    
+   /**
+      Query a student's record for the lowest quiz score inputed.
+      @return Lowest quiz score on record.
+    */
    public int getLowestQuizScore()
    {
       return lowValue;
    }
    
+   /**
+      Query a student's record for the highest quiz score inputed.
+      @return Highest quiz score on record.
+    */
    public int getHighestQuizScore()
    {
       return highValue;
    }
    
+   /**
+      Query a student's record for all the scores entered.
+      @return All the scores entered on a student's record, seperated by spaces.
+    */
    public String getScoresEntered()
    {
       return scoresEntered;
@@ -243,43 +288,83 @@ public class Student
    
    /**
       Query a student's record for the student's average score.
-      @return The student's Average quiz score.
+      @return The student's average quiz score.
     */
    public double getMean()
    {
       return mean;
    }
    
+   /**
+      Query a student's record for the sum of every quiz score squared.
+      This data is used to calculate the standard deviation.
+      @return The sum of each quiz score squared.
+    */
+   public int getSumOfSquares()
+   {
+      return sumOfSquares;
+   }
+   
+   /**
+      Query a student's record for the variance between all the quiz scores.
+      This data is used to calculate the standard deviation.
+      @return The variance between all the scores on record.
+    */
    public double getVariance()
    {
       return variance;
    }
    
+   
+   /**
+      Query a student's record for the standard deviation of their quiz scores.
+      @return The standard deviation of the quiz scores on record.
+    */
    public double getStandardDeviation()
    {
       return standardDeviation;
    }
    
+   /**
+      Query the student's records for the number of quizzes they've earned A's on.
+      @return The number of quizzes that scored an A letter grade.
+    */
    public int getNumberOfAGrades()
    {
       return numberOfAGrades;
    }
    
+   /**
+      Query the student's records for the number of quizzes they've earned B's on.
+      @return The number of quizzes that scored an B letter grade.
+    */
    public int getNumberOfBGrades()
    {
       return numberOfBGrades;
    }
    
+   /**
+      Query the student's records for the number of quizzes they've earned C's on.
+      @return The number of quizzes that scored an C letter grade.
+    */
    public int getNumberOfCGrades()
    {
       return numberOfCGrades;
    }
    
+   /**
+      Query the student's records for the number of quizzes they've earned D's on.
+      @return The number of quizzes that scored an D letter grade.
+    */
    public int getNumberOfDGrades()
    {
       return numberOfDGrades;
    }
    
+   /**
+      Query the student's records for the number of quizzes they've earned F's on.
+      @return The number of quizzes that scored an F letter grade.
+    */
    public int getNumberOfFGrades()
    {
       return numberOfFGrades;
@@ -302,11 +387,15 @@ public class Student
       String letterGradesStr = letterGradesToString();
       
       String output = studentDataStr + letterGradesStr;
-      output += "\n" + scoresEntered;
       
       return output;
    }
    
+   /**
+      Return's a string containing the student's data on record.
+      Formatted for System.out.print.
+      @return The formatted string for showing the student's data. 
+   */
    private String studentDataToString()
    {
       String nameStr = OUTPUT_NAME_LABEL;
@@ -320,8 +409,10 @@ public class Student
       String lowValueStr = OUTPUT_LOWEST_QUIZ_SCORE_LABEL;
       String highValueStr = OUTPUT_HIGHEST_QUIZ_SCORE_LABEL;
       String meanStr = OUTPUT_MEAN_LABEL;
+      String sumOfSquaresStr = OUTPUT_SUM_OF_SQUARES_LABEL;
       String varianceStr = OUTPUT_VARIANCE_LABEL;
       String standardDeviationStr = OUTPUT_STANDARD_DEVIATION_LABEL;
+      String scoresEnteredStr = OUTPUT_SCORES_ENTERED_LABEL;
       
       // if no quizzes, mask the strings
       if(getNumberOfQuizzes() == 0)
@@ -331,8 +422,10 @@ public class Student
          lowValueStr += BLANK_DATA;
          highValueStr += BLANK_DATA;
          meanStr += BLANK_DATA;
+         sumOfSquaresStr += BLANK_DATA;
          varianceStr += BLANK_DATA;
          standardDeviationStr += BLANK_DATA;
+         scoresEnteredStr += BLANK_DATA;
       }
       else
       {
@@ -341,8 +434,10 @@ public class Student
          lowValueStr += getLowestQuizScore();
          highValueStr += getHighestQuizScore();
          meanStr += doubleDecimal.format(getMean());
+         sumOfSquares += getSumOfSquares();
          varianceStr += tripleDecimal.format(getVariance());
          standardDeviationStr += tripleDecimal.format(getStandardDeviation());
+         scoresEnteredStr += scoresEntered;
       }
       
       String studentDataString = nameStr;
@@ -351,12 +446,20 @@ public class Student
       studentDataString += lowValueStr;
       studentDataString += highValueStr;
       studentDataString += meanStr;
+      studentDataString += sumOfSquares;
       studentDataString += varianceStr;
       studentDataString += standardDeviationStr;
+      studentDataString += scoresEnteredStr;
       
       return studentDataString;
    }
    
+   /**
+      Returns a formatted string for displaying the number of
+      letter grades a student has earned.
+      Formatted for System.out.println.
+      @return Formatted 
+    */
    private String letterGradesToString()
    {
       String numberOfAGradesStr = OUTPUT_NUMBER_OF_A_GRADES_LABEL;
@@ -394,6 +497,11 @@ public class Student
       return letterGradesStr;
    }
    
+   /**
+      Get the letter grade corresponding to the grade given.
+      @param grade The grade that needs a letter grade.
+      @return The letter grade corresponding to the given grade.
+    */
    private LetterGrade getLetterGrade(int grade)
    {
       if(inRange(grade, LOWEST_A_GRADE, HIGHEST_A_GRADE))
@@ -417,6 +525,10 @@ public class Student
       return LetterGrade.F;
    }
    
+   /**
+      Increments the count for the given letter grade.
+      @param grade The letter grade that is being added to record.
+    */
    private void addLetterGrade(LetterGrade grade)
    {
       switch(grade)
@@ -439,9 +551,17 @@ public class Student
       }
    }
    
+   /**
+      Determines whether a value lies on the given range.</br>
+      Range can be from a to b, or b to a.
+      @param x The value to test.
+      @param a One end of the range.
+      @param b Other end of the range.
+      @return True if the values lies on range, otherwise false.
+    */
    private boolean inRange(int x, int a, int b)
    {
-      if (a < b)
+      if (a <= b)
       {
          return ((a <= x) && (x <= b));
       }
@@ -449,14 +569,14 @@ public class Student
       {
          return ((b <= x) && (x <= a));
       }
-      else if (a == b)
-      {
-         return (x == a);
-      }
       
       return false;
    }
    
+   /**
+      Calculates the mean, variance, and standard deviation.
+      Updates the corresponding instance variables.
+    */
    private void calculate()
    {
       calculateMean();
@@ -464,11 +584,21 @@ public class Student
       calculateStandardDeviation();
    }
    
+   /**
+      Calculates the mean and updates the instance variable.
+      <p>mean = totalQuizScore / numberOfQuizzes
+    */
    private void calculateMean()
    {
       mean = (double)totalQuizScore / (double)numberOfQuizzes;
    }
    
+   /**
+      Calculates the variance and updates the instance variable.
+      If the number of quizzes is one, just sets the variance
+      to 0.0.
+      <p>mean = (sumOfSquares - mean) / (numberOfQuizzes - 1)
+    */
    private void calculateVariance()
    {  
       // Don't calculate if numberOfQuizzes is 1,
@@ -483,6 +613,10 @@ public class Student
       }
    }
    
+   /**
+      Calculates the standard deviation and updats the instance variable.
+      <p>standardDeviation = sqrt(variance)
+    */
    private void calculateStandardDeviation()
    {
       standardDeviation = Math.sqrt(variance);
