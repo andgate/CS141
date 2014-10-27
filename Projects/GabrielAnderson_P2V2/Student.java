@@ -1,4 +1,3 @@
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
@@ -121,9 +120,6 @@ public class Student
    private static final int LOWEST_D_GRADE = 60;
    private static final int HIGHEST_F_GRADE = 59;   
    private static final int LOWEST_F_GRADE = 0;
-   
-   private static final DecimalFormat doubleDecimal = new DecimalFormat("0.00");
-   private static final DecimalFormat tripleDecimal = new DecimalFormat("0.000");
    
    /**
       Constructs an student with a name, with no quizzes taken.

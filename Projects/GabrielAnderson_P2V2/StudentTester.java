@@ -12,18 +12,13 @@ public class StudentTester
    // Data taken from excel spreadsheet.
    // For actual values, check out the spread sheet.
    public static final String FIRST_STUDENT_SCORES
-      = "0 100 82 91 99 100 100 14 92 93 ";
+      = "0 59 60 69 70 79 80 89 90 100 ";
    public static final String SECOND_STUDENT_SCORES
       = "-1 15.77 101 qwerty $54sfd ";
    public static final String THIRD_STUDENT_SCORES
       = "0";
    public static final String INPUT_SCORES
       = FIRST_STUDENT_SCORES + SECOND_STUDENT_SCORES + THIRD_STUDENT_SCORES;
-   
-   public static final String EXPECTED_OUTPUT_LABEL
-      = "\nExpected student info: ";
-   public static final String ACTUAL_OUTPUT_LABEL
-      = "\nActual student info: "; 
    
    public static final String FIRST_STUDENT_NAME = "First Student";
    public static final String SECOND_STUDENT_NAME = "Second Student";
@@ -43,7 +38,7 @@ public class StudentTester
       firstStudent.inputData(input);
       firstStudent.inputData(input);
       
-      System.out.println(ACTUAL_OUTPUT_LABEL + firstStudent.toString() + "\n");
+      System.out.println(firstStudent.toString() + "\n");
       
       firstStudent.inputData(input);
       firstStudent.inputData(input);
@@ -51,7 +46,7 @@ public class StudentTester
       firstStudent.inputData(input);
       firstStudent.inputData(input);
       
-      System.out.println(ACTUAL_OUTPUT_LABEL + firstStudent.toString() + "\n");
+      System.out.println(firstStudent.toString() + "\n");
 
       
       // Second student tests bad inputs.
@@ -64,11 +59,15 @@ public class StudentTester
       secondStudent.inputData(input);
       secondStudent.inputData(input);
       
-      System.out.println(ACTUAL_OUTPUT_LABEL + secondStudent.toString() + "\n");
+      System.out.println(secondStudent.toString() + "\n");
       
       // Third student, tests input when only one quiz score.
       Student thirdStudent = new Student(THIRD_STUDENT_NAME);
       thirdStudent.inputData(input);
-      System.out.println(ACTUAL_OUTPUT_LABEL + thirdStudent.toString() + "\n");
+      System.out.println(thirdStudent.toString() + "\n");
+      
+      // Fourth student, tests no input at all.
+      Student fourthStudent = new Student();
+      System.out.println(fourthStudent.toString() + "\n");
    }
 }
