@@ -21,7 +21,7 @@ import java.util.Scanner;
    All of these changes were backed up by a thorough testing procedure.</br>
    <p>COPYRIGHT &copy; 2014 Gabriel Anderson. All Rights Reserved.
    @author Gabriel Anderson
-   @since 13 October 2014
+   @since 26 October 2014
    @version 2.0
  */
 public class Student
