@@ -1,0 +1,114 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq0\fcharset128 Monospaced.plain;}{\f6\froman\fprq2\fcharset128 Liberation Serif{\*\falt Times New Roman};}{\f7\fnil\fprq2\fcharset0 DejaVu Sans;}{\f8\fnil\fprq2\fcharset0 Lohit Hindi;}{\f9\fnil\fprq0\fcharset128 Lohit Hindi;}}
+{\colortbl;\red0\green0\blue0;\red148\green30\blue223;\red250\green100\blue0;\red0\green203\blue0;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033 Normal;}
+{\s15\sbasedon0\snext16\sb240\sa120\keepn\dbch\af7\dbch\af8\afs28\loch\f4\fs28 Heading;}
+{\s16\sbasedon0\snext16\sl288\slmult1\sb0\sa140 Text Body;}
+{\s17\sbasedon16\snext17\sl288\slmult1\sb0\sa140\dbch\af9 List;}
+{\s18\sbasedon0\snext18\sb120\sa120\noline\i\dbch\af9\afs24\ai\fs24 Caption;}
+{\s19\sbasedon0\snext19\noline\dbch\af9 Index;}
+}{\info{\creatim\yr2014\mo11\dy12\hr0\min43}{\revtim\yr0\mo0\dy0\hr0\min0}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern67241475}}\deftab720
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Default Style;}}
+\formshade\paperh15840\paperw12240\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch
+Gabriel Anderson}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch
+CS&141, S1\line Chapter 7, Before Day 2}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch
+Self-Check questions 7.4-7.6}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\b\ab\rtlch \ltrch\loch
+20. }{\rtlch \ltrch\loch
+The two algorithms are removing an element from an unordered array and removing an element from an ordered array. Since the order of the student's grades is unknown, it would be best to assume the array is unordered and use the algorithm for removing an element from an unordered array.\line \line }{\b\ab\rtlch \ltrch\loch
+21. }{\rtlch \ltrch\loch
+Instead of removing the minimum element from the array, you can remove it from the sum. Simply store the smallest element, compute the sum, subtract the smallest element from the sum, and then divide the new sum by the number of elements minus one.\line \line }{\b\ab\rtlch \ltrch\loch
+22.}{\rtlch \ltrch\loch
+ A good way to count the number of positive and negative elements in an array would be a variation of the sum algorithm and the linear search algorithm. Instead of a total, you would keep a counter for positive numbers and a counter for negative numbers. Instead of search for a specific value, you would search for values greater than zero, else less than zero. When a match is found, simply increment the corresponding counter. If the element is zero, then no counter will increment, because zero isn't positive or negative. So you don't even need to bother checking for equivalency to zero. Do not include a found sentinal.\line \line }{\b\ab\rtlch \ltrch\loch
+23.}{\rtlch \ltrch\loch
+ To print out a comma seperated list of positive elements in an array, use the algorithm for performing a linear, but do it from the end of the array. When a positive value is found, set isFound to true and save the position. Next, loop forward through the array from the start towards the position of the last positive number. The loop should contine as long as the index is less than the position of the last positive number. On each iteration, check to make sure the element at the current index is greater than zero, and print the string \u8220\'93}{\i\ai\rtlch \ltrch\loch
+<number>}{\rtlch \ltrch\loch
+, \u8220\'93 when that is the case. The last element won't print, and this is what we want. After the loop, print the last element, and this way no comma or space will follow the last element.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\b\ab\rtlch \ltrch\loch
+24. }{\rtlch \ltrch\loch
+This is essentially an algorithm that performs some action when the element of an array is sufficient to satisfy a given condition. In question 23, this would help to determine if the element is positive, and would tell the program whether to print the value, or continue onto the next element.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033{\b\ab\rtlch \ltrch\loch
+25. }{\rtlch \ltrch\loch
+The psuedo-code is free of bounds errors because j never goes out of bounds. J starts at half the length, and I starts at the beginning of the array. Each iteration, I and J are increased by one until I has travelled halfway towards the end, at which point the loop does not continue. Since I and J travel the same distance, J has also traveled halfway towards the end. Halfway from the halfway point to end would mean that j has reached the end. So, when I is equivalent to the halfway point, j is equivalent to the length, and the loop will not continue. Also, for odd arrays, j never reaches the end before I reaches the halfway point.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\li0\ri0\lin0\rin0\fi0{\b\ab\rtlch \ltrch\loch
+26. }{\rtlch \ltrch\loch
+This algorithm reverse the array.\line \line }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\pagebb\li0\ri0\lin0\rin0\fi0{\b\ab\rtlch \ltrch\loch
+27. }{\rtlch \ltrch\loch
+\line I = 1}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\li0\ri0\lin0\rin0\fi0{\rtlch \ltrch\loch
+while I < length\line    if element at i is even\line       j = i}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\li0\ri0\lin0\rin0\fi0{\rtlch \ltrch
+      }{\rtlch \ltrch\loch
+while (J-1) != 0 or element before j is odd\line          swap element at j with the element before j\line          j--}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\li0\ri0\lin0\rin0\fi0{\rtlch \ltrch
+   }{\rtlch \ltrch\loch
+i++\line \line }{\b\ab\rtlch \ltrch\loch
+28. }{\rtlch \ltrch\loch
+\line evenPos = 0\line I = 0\line while I < length\line    if element at I is even\line      tmp = element at i}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\li0\ri0\lin0\rin0\fi0{\rtlch \ltrch
+     }{\rtlch \ltrch\loch
+remove element at i\line      insert temp into array at position evenPos\line      evenPos++\line \line }{\b\ab\rtlch \ltrch\loch
+29.}{\rtlch \ltrch\loch
+ The algorithm that finds the largest element in an array, in section 6.7.5, does not use an array to do so. Instead, it uses a for loop, asks for an input, and then compares the input to the largest value already stores. This is like uses a deck of playing cards. You draw one card, and that is the largest you've drawn so far. Next, you draw another card. If this card is larger than the one you have already, keep it and discard the old largest. Otherwise, draw the next, and throw the card you drew into the discard pile. This algorithm is poorly described with a lineup of coins, or toy soliders of varying size, because you only really consider two elements at once. With a line-up of objects, you are considering the sequence of the objects as well. In this case, the cards are better, because like the cards, this algorithm only compares two elements of the sequence, the largest and the current, rather than each element.\line \line }{\b\ab\rtlch \ltrch\loch
+30. }{\rtlch \ltrch\loch
+The totals of the columns are 4, 4, 4, and 12.\line \line }{\b\ab\rtlch \ltrch\loch
+31.}{\rtlch \ltrch\loch
+\line }{\cf2\rtlch \ltrch\loch\fs24\loch\f5
+for}{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+(}{\cf2\rtlch \ltrch\loch\fs24\loch\f5
+int}{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+ i = 0; i < board.length; i++)}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\rtlch \ltrch\loch\fs24\loch\f5
+for}{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+(}{\cf2\rtlch \ltrch\loch\fs24\loch\f5
+int}{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+ j = 0; j < board[i].length; j++)}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+      }{\cf2\rtlch \ltrch\loch\fs24\loch\f5
+if}{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+(((i + j + 1) % 2) == 0)}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+         board[i][j] = 1;}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+\}}{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+\line }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\li0\ri0\lin0\rin0\fi0{\cf1\b\ab\rtlch \ltrch\loch\fs24\loch\f6
+32.}{\cf1\rtlch \ltrch\loch\fs24\loch\f6
+\line String[][] ticTacToeBoard = \line  \tab \{\line  \tab \tab \{ \uc2 \u8220\'81\'67 \u8220\'81\'67, \u8220\'81\'67 \u8220\'81\'67, \u8220\'81\'67 \u8220\'81\'67 \},\line  \tab \tab \{ \u8220\'81\'67 \u8220\'81\'67, \u8220\'81\'67 \u8220\'81\'67, \u8220\'81\'67 \u8220\'81\'67 \},\uc1 }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\li0\ri0\lin0\rin0\fi0{\cf1\rtlch \ltrch\loch\fs24\loch\f6
+\tab \tab \{ \uc2 \u8220\'81\'67 \u8220\'81\'67, \u8220\'81\'67 \u8220\'81\'67, \u8220\'81\'67 \u8220\'81\'67 \}\uc1 }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\li0\ri0\lin0\rin0\fi0{\cf1\rtlch \ltrch\loch\fs24\loch\f6
+\tab \};\line }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang1081\loch\f3\fs24\lang1033\li0\ri0\lin0\rin0\fi0{\cf1\b\ab\rtlch \ltrch\loch\fs24\loch\f6
+33. }{\cf1\rtlch \ltrch\loch\fs24\loch\f6
+ticTacToeBoard[0][3] = \uc2 \u8220\'81\'67x\u8221\'81\'68;\line \line \uc1 }{\cf1\b\ab\rtlch \ltrch\loch\fs24\loch\f6
+34. }{\cf1\rtlch \ltrch\loch\fs24\loch\f6
+The elements that make up the diagonal from the upper-left to the lower right are }{{\*\bkmkstart __DdeLink__6540_70843540}\cf1\rtlch \ltrch\loch\fs24\loch\f6
+ticTacToeBoard[0][0]}{{\*\bkmkend __DdeLink__6540_70843540}\cf1\rtlch \ltrch\loch\fs24\loch\f6
+, ticTacToeBoard[1][1], and ticTacToeBoard[2][2].}
+\par }

@@ -1,0 +1,1599 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\fnil\fprq0\fcharset2 OpenSymbol{\*\falt Arial Unicode MS};}{\f6\froman\fprq0\fcharset128 Monospaced.plain;}{\f7\fmodern\fprq1\fcharset128 Liberation Mono{\*\falt Courier New};}{\f8\fnil\fprq2\fcharset0 DejaVu Sans;}{\f9\fnil\fprq2\fcharset0 Lohit Hindi;}{\f10\fnil\fprq0\fcharset128 Lohit Hindi;}}
+{\colortbl;\red0\green0\blue0;\red148\green30\blue223;\red250\green100\blue0;\red0\green203\blue0;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af8\langfe2052\dbch\af9\afs24\alang1081\loch\f3\fs24\lang1033 Normal;}
+{\*\cs15\snext15\dbch\af5\dbch\af5\loch\f5 Bullets;}
+{\s16\sbasedon0\snext17\sb240\sa120\keepn\dbch\af8\dbch\af9\afs28\loch\f4\fs28 Heading;}
+{\s17\sbasedon0\snext17\sl288\slmult1\sb0\sa140 Text Body;}
+{\s18\sbasedon17\snext18\sl288\slmult1\sb0\sa140\dbch\af10 List;}
+{\s19\sbasedon0\snext19\sb120\sa120\noline\i\dbch\af10\afs24\ai\fs24 Caption;}
+{\s20\sbasedon0\snext20\noline\dbch\af10 Index;}
+}{\info{\creatim\yr2014\mo11\dy4\hr12\min8}{\revtim\yr0\mo0\dy0\hr0\min0}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern67241475}}\deftab720
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Default Style;}}
+\formshade\paperh15840\paperw12240\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af8\langfe2052\dbch\af9\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch
+Gabriel Anderson}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af8\langfe2052\dbch\af9\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch
+CS&141, S1}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af8\langfe2052\dbch\af9\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch
+Chapter 6, Before Day 2}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af8\langfe2052\dbch\af9\afs24\alang1081\loch\f3\fs24\lang1033\rtlch \ltrch\loch
+
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\rtlch \ltrch\loch
+
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+p.262 full code loop input validation}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b\afs24\ab\rtlch \ltrch\loch\fs24
+DoLoop.java}{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+import}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ java.util.Scanner;}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   This program shows how you can prompt for input that fulfills}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   a certain condition. Try entering negative values, such as}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   -2 or -0.5, to see how they are rejected.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+*/}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+class}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ DoLoop }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ main(String[] args)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      Scanner in = }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ Scanner(System.in);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ value;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+do}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         System.out.print(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"Enter a number >= 0: "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         value = in.nextDouble();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+while}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (value < 0);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ root = Math.sqrt(value);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"The square root of the number is "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ + root);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\}}{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+\line }
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+p. 264 6.5 SentinalDemo.java}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b\afs24\ab\rtlch \ltrch\loch\fs24
+SentinalDemo.java}{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+import}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ java.util.Scanner;}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   This program prints the average of salary values that are terminated with a sentinel.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+*/}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+class}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ SentinelDemo}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ main(String[] args)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{  }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ sum = 0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ count = 0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ salary = 0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      System.out.print(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"Enter salaries, -1 to finish: "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      Scanner in = }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ Scanner(System.in);}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// Process data until the sentinel is entered }{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+while}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (salary != -1)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{  }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         salary = in.nextDouble();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (salary != -1) }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         \{  }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+            sum = sum + salary;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+            count++;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// Compute and print the average}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (count > 0)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ average = sum / count;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"Average salary: "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ + average);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+else}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"No data"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\}}{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+\line }
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+p. 266 special topic 6.3 loop and a half }
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+\tab }{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+Sometimes, a loop needs to terminate halfway through. The book calls this loop-and-a-half. One way of doing this is to set up a control switch, in the form of a boolean value, and use that value as the condition for the loop. Another way, which the author seems to be seduced by, is to cram the condition responsible for flipping the switch into the loop's condition, so the loop doesn't need to be a loop-and-a-half. This will work for very simple loops, but anything more complicated, such as the main loop of a game, where lots of steps happen before the loop needs to decided to terminate, will need the control switch. Finally, the book also suggests sticking the loop in a method and using return to terminate the loop. This is good in situations where not much control is needed over the loop, and it just needs to terminate during certain circumstances.}{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+\line }
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+p. 267 special topic 6.4 do not use continue or break (except in switch/case) }
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+\tab }{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+Break will stop the loop and continue to the code after the loop. Continue will stop the current iteration and go to the next. Label is an evil thing, that allows break to goto labeled parts of the code. All of these should never be used, as they made code much more difficult to understand. Break is one exception, as switch/case statements require the use of break. Otherwise, avoid break to.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+p. 269 lightly cover storyboards (use stick figures) }
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+\tab }{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+Story boards are used to plan actions sequences.  I don't have any stick figures, but I can tell you what I learned anyways. A story board is basically a hypothetical scenario where a user uses the program, and you try to come up with ways the user can run into trouble. The example given is for a simple conversion program. The first problem the user would run into is confusion on what units they can use. The program only accepted \uc2 \u8220\'81\'67in\u8221\'81\'68, but the user might unknowingly input \u8220\'81\'67inches\u8221\'81\'68. The solution was to add a list of valid units in the input prompt asking for units. Later in the story, the user ran into the problem of exiting the program. There was no prompt given for the user to exit, so they were stuck in the program with no way out. Adding a \u8220\'81\'67continue?(y/n)\u8220\'81\'67 prompt after each conversion gave the user the option to exit. \line \tab Used correctly, storyboards can be used to fine-tune or even create the blue-prints for a user's experience.\uc1 }{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+\line }
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+ch. 6.7 common loop algorithms \line }{\b\afs24\ab\rtlch \ltrch\loch\fs24
+CommonLoopAlgorithms.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af8\langfe2052\dbch\af9\afs24\alang1081\loch\f3\fs24\lang1033\sb0\sa0{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+import}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ java.util.Scanner;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line \line }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+class}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ CommonLoopAlgorithms}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+\{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ sum(Scanner in)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ total = 0.0;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+while}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(in.hasNextDouble())}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ input = in.nextDouble();}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         total += input;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+return}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ total;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ average(Scanner in)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ total = 0.0;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ count = 0;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+while}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(in.hasNextDouble())}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ input = in.nextDouble();}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         total += input;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         count++;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ average = 0.0;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ (count > 0)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         average = total/count;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+return}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ average;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ countMatches(String str, }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+char}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ match)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ matches = 0;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(}{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ i = 0; i < str.length(); i++)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+char}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ ch = str.charAt(i);}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+        }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(ch == match)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+            matches++;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+     }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+return}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ matches;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ countWords(String str, }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ wordLength)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      Scanner in = }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+new}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ Scanner(str);}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ words = 0;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+while}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(in.hasNext())}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+        String input = in.next();}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(input.length() <= wordLength)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+            words++;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+return}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ words;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ findFirstMatch(String str, }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+char}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ ch)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ position = 0;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+boolean}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ found = }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+false}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+while}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(!found && position < str.length())}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(ch == str.charAt(position))}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+            found = }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+true}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+else}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+            position++;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \} }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+return}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ position;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ promptUntilMatch(Scanner in, }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ lowest, }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ highest)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+boolean}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ valid = }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+false}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ input = 0.0;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+while}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(valid)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         System.out.print(}{\cf4\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+"Please enter a value from "}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ + lowest + }{\cf4\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+" to "}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ + highest + }{\cf4\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+": "}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+);}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         input = in.nextDouble();}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(lowest <= input && input <= highest)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+            valid = }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+true}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+else}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+            System.out.println(}{\cf4\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+"Invalid input."}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+);}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+return}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ input;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ max(Scanner in)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+     }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ value = in.nextDouble();}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+while}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(in.hasNextDouble())}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ input = in.nextDouble();}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(input > value)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+            value = input;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+return}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ value;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ min(Scanner in)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ value = in.nextDouble();}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+while}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(in.hasNextDouble())}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ input = in.nextDouble();}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(input < value)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+            value = input;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+return}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ value;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+boolean}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ hasDuplicates(Scanner in)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ input = in.nextDouble();}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+     }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+while}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+(in.hasNextDouble())}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ previous = input;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         input = in.nextDouble();}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ (input == previous)}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \{}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+            }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+return}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+true}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+     }{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+return}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+false}{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+;}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\b0\afs20\ab0\rtlch \ltrch\loch\fs20
+\line }{\cf1\b0\afs20\ab0\rtlch \ltrch\loch\fs20\loch\f6
+\}}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+p. 276 How to 6.1 }
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\li720\ri0\lin720\rin0\fi0\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+1. Decide what to do inside the loop.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\li720\ri0\lin720\rin0\fi0\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+2. Specify the loop condition.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\li720\ri0\lin720\rin0\fi0\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+3. Determine the loop type.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\li720\ri0\lin720\rin0\fi0\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+4. Setup variables for entering the loop for the first time.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\li720\ri0\lin720\rin0\fi0\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+5. Process the result after the loop has finished.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\li720\ri0\lin720\rin0\fi0\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+6. Trace the loop with typical examples.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\li720\ri0\lin720\rin0\fi0\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+7. Implement the loop in Java.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+p. 279 worked example 6.1 credit card \line }{\b\afs24\ab\rtlch \ltrch\loch\fs24
+CCNumber.java}{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   This program removes spaces and dashes from a credit card number.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+*/}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+class}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ CCNumber}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ main(String[] args)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      String creditCardNumber = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"4123-5678-9012-3450"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ i = 0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+while}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (i < creditCardNumber.length())}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+char}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ ch = creditCardNumber.charAt(i);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (ch == }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+' '}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ || ch == }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+'-'}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+)         }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+            }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// Remove the character at position i}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+            String before = creditCardNumber.substring(0, i);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+            String after = creditCardNumber.substring(i + 1);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+            creditCardNumber = before + after;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+else}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+            i++;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      System.out.println(creditCardNumber);      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\}}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+p. 279 nested loops\line }{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+\tab }{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+A nested loop is a loop inside of another loop. This can be useful for traversing the rows and columns of a table. For instance, if you wanted to add all the values in a table, you'd loop through all the rows, and on each iteration, loop through the columns of the row, storing each column in the total. Loops inside of loops, man. Woah.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+p. 280 6.8 PowerTable.java\line }{\b\afs24\ab\rtlch \ltrch\loch\fs24
+PowerTable.java}{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   This program prints a table of powers of x.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+*/}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+class}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ PowerTable}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ main(String[] args)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{  }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ NMAX = 4;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ XMAX = 10;}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// Print table header}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ n = 1; n <= NMAX; n++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         System.out.printf(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"%10d"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+, n);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      System.out.println();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ n = 1; n <= NMAX; n++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         System.out.printf(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"%10s"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+, }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"x "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      System.out.println();}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// Print table body}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ x = 1; x <= XMAX; x++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// Print table row}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ n = 1; n <= NMAX; n++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+            System.out.printf(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"%10.0f"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+, Math.pow(x, n));}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         System.out.println();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\}}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+p. 282 table3 nested loop examples\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// Prints 3 rows of 4}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+asterisks}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ each.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+(}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ i = 1; i <= 3; i++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+(}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ j = 1; j <= 4; j++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"*"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+""}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\}}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// Prints 4 rows of 3}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+asterisks}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ each.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+(}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ i = 1; i <= 4; i++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+(}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ j = 1; j <= 3; j++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"*"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+""}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\}}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// Prints 4 rows of}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// lengths 1, 2, 3, and 4.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+(}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ i = 1; i <= 4; i++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+(}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ j = 1; j <= i; j++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"*"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+""}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\}}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// Prints }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+asterisks}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ in even columns,}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// dashes in odd columns.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+(}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ i = 1; i <= 3; i++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+(}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ j = 1; j <= 5; j++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (j % 2 == 0)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"*"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+else}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"_"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+""}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\}}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// Prints a checkerboard pattern.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+(}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ i = 1; i <= 3; i++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+(}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ j = 1; j <= 5; j++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (i % 2 == j % 2)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"*"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+else}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+" "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+""}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\}}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+p. 283 Die.java\line }{\b\afs24\ab\rtlch \ltrch\loch\fs24
+Die.java}{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+import}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ java.util.Random;}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   This class models a die that, when cast, lands on a random}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   face.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+*/}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+class}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ Die}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ Random generator;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ sides;}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      Constructs a die with a given number of sides.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      @param s the number of sides, e.g. 6 for a normal die}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ Die(}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ s)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      sides = s;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      generator = }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ Random();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      Simulates a throw of the die}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      @return the face of the die }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ cast()}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ 1 + generator.nextInt(sides);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\}\line }
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b\afs24\ab\rtlch \ltrch\loch\fs24
+DieSimulator.java}{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   This program simulates casting a die ten times.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+*/}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+class}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ DieSimulator}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ main(String[] args)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      Die d = }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ Die(6);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ TRIES = 10;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ i = 1; i <= TRIES; i++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{  }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ n = d.cast();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         System.out.print(n + }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+" "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      System.out.println();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\}}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+p. 289 how to 6.2 debugging\line }{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+We did this already.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\li720\ri0\lin720\rin0\fi0\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+1. Reproduce the error.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\li720\ri0\lin720\rin0\fi0\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+2. Simplify the error.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\li720\ri0\lin720\rin0\fi0\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+3. Divide and conquer.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\li720\ri0\lin720\rin0\fi0\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+4. Know what your program should do.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\li720\ri0\lin720\rin0\fi0\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+5. Look at all details.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\li720\ri0\lin720\rin0\fi0\sb0\sa0{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+6. Make sure you understand each bug before you fix it.}{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+\line }
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+p. 291 worked example Sample debugging session\line }{\b0\afs30\ab0\rtlch \ltrch\loch\fs30
+Also did this before too.\line }{\b\afs24\ab\rtlch \ltrch\loch\fs24
+SyllableCounter.java\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+import}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ java.util.Scanner;}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   This program counts the syllables of all words in a sentence.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+*/}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+class}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ SyllableCounter}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\{  }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ main(String[] args)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{  }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      Scanner in = }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ Scanner(System.in);}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"Enter a sentence ending in a period."}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      String input;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+     }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+do}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         input = in.next();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         Word w = }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ Word(input);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ syllables = w.countSyllables();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"Syllables in "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ + input + }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+": "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+            + syllables);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \} }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+while}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (!input.endsWith(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"."}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+));}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\}}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa140{\cf1\b\afs24\ab\rtlch \ltrch\loch\fs24\loch\f3
+Word}{\cf1\b\afs24\ab\rtlch \ltrch\loch\fs24\loch\f3
+.java\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   This class describes words in a document. There are a couple}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   of bugs in this class.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+*/}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+class}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ Word}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+  }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ String text;}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      Constructs a word by removing leading and trailing non-}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      letter characters, such as punctuation marks.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      @param s the input string}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ Word(String s)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ i = 0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+while}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (i < s.length() && !Character.isLetter(s.charAt(i)))}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         i++;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ j = s.length() - 1;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+while}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (j > i && !Character.isLetter(s.charAt(j)))}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         j--;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      text = s.substring(i, j + 1);      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      Returns the text of the word, after removal of the}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      leading and trailing non-letter characters.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      @return the text of the word}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ String getText()}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ text;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+  }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      Counts the syllables in the word.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      @return the syllable count}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ countSyllables()}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+  \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ count = 0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ end = text.length() - 1;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (end < 0) \{ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ 0; \} }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// The empty string has no syllables}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// An e at the end of the word doesn't count as a vowel}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+char}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ ch = text.charAt(end);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (ch == }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+'e'}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ || ch == }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+'E'}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+) \{ end--; \}}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+boolean}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ insideVowelGroup = }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+false}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ i = 0; i <= end; i++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+     \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         ch = text.charAt(i);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         String vowels = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f6
+"aeiouyAEIOUY"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (vowels.indexOf(ch) >= 0) }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+            }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// ch is a vowel}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+            }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (!insideVowelGroup)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+            \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+               }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// Start of new vowel group}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+               count++; }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+               insideVowelGroup = }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+true}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+            \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+else}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+            insideVowelGroup = }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+false}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f6
+// Every word has at least one syllable}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ (count == 0) \{ count = 1; \}}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+     }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f6
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+ count;      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f6
+\}}
+\par }
