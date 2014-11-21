@@ -1,0 +1,119 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq0\fcharset128 Monospaced.plain;}{\f6\fnil\fprq2\fcharset0 DejaVu Sans;}{\f7\fnil\fprq2\fcharset0 Lohit Hindi;}{\f8\fnil\fprq0\fcharset128 Lohit Hindi;}}
+{\colortbl;\red0\green0\blue0;\red148\green30\blue223;\red0\green203\blue0;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033 Normal;}
+{\*\cs15\snext15 Numbering Symbols;}
+{\s16\sbasedon0\snext17\sb240\sa120\keepn\dbch\af6\dbch\af7\afs28\loch\f4\fs28 Heading;}
+{\s17\sbasedon0\snext17\sl288\slmult1\sb0\sa140 Text Body;}
+{\s18\sbasedon17\snext18\sl288\slmult1\sb0\sa140\dbch\af8 List;}
+{\s19\sbasedon0\snext19\sb120\sa120\noline\i\dbch\af8\afs24\ai\fs24 Caption;}
+{\s20\sbasedon0\snext20\noline\dbch\af8 Index;}
+}{\info{\creatim\yr2014\mo11\dy15\hr19\min24}{\revtim\yr0\mo0\dy0\hr0\min0}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern67241730}}\deftab720
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Default Style;}}
+\formshade\paperh15840\paperw12240\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch
+Gabriel Anderson}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch
+CS&141, S1}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch
+Chapter 8, Before Day 1\line Answers to Self-Check Questions (8.1 - 8.4, 8.6)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\rtlch \ltrch\loch
+
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b\ab\rtlch \ltrch\loch
+1. }{\rtlch \ltrch\loch
+A simple rule of thumb for finding classes is to think in terms of nouns, and avoid verbs. Classes are commonly named using nouns, and methods with verbs, so think of a noun that describes what you need, and look for that.\line \line }{\b\ab\rtlch \ltrch\loch
+2.}{\rtlch \ltrch\loch
+ ChessBoard would be an appropriate name for a class in a Chess program. It's a noun that describes and object that exists in a game of chess. MovePiece would be an awful name for a class in a Chess program. The name is a verb, not a noun. Objects are suppose to describe things, not action, which is why nouns are preferred over verbs for class names. However, movePiece would make a great name for a method in a ChessBoard object, as it is a verb, and describes an action that my be performed on a chessboard.\line \line }{\b\ab\rtlch \ltrch\loch
+3.}{\rtlch \ltrch\loch
+ CashRegister is not cohesive because it is one big monolithic class that does all the work, including work that could be done by other classes. In particular, the CashRegister class uses a clunky interface for inserting money. It keeps track of the value of quarters, nickels, dimes, and pennies as constant instance variables, and then a the constuctor requires a field for the number of each coin in the register. To make CashRegister more cohesive, it would be better to identify the aspects that vary and seperate them from what remains the same. That is, make coin a seperate class, and give it a value that can be set. Then, the cash register doesn't have to keep track of the value of each coin, and the constructor can just take a list of coins. The user of the class could even use currency outside of the american coin system.\line \line }{\b\ab\rtlch \ltrch\loch
+4. }{\b0\ab0\rtlch \ltrch\loch
+The coin class does not depend on the cash register class because it has no need to. Unlike the cash register, which needs to keep track of coins and thus depends on them for their methods, the coin class only needs to be concerned with it's own name a value.\line \line }{\b\ab\rtlch \ltrch\loch
+5. }{\b0\ab0\rtlch \ltrch\loch
+Minimizing dependencies between classes reduces the amount of work a programmer has to do to maintain and change the program. A class with a lot of dependencies is going to be much more affected by changes in it's dependencies than a class with less dependencies.\line \line }{\b\ab\rtlch \ltrch\loch
+6.}{\b0\ab0\rtlch \ltrch\loch
+ The substring method of the String class is an accessor, because it returns the substring, but does not change the object it is called from in any way. However, if the substring class didn't return the substring, and instead changed the string to the specified substring, then it would be a mutator class.\line \line }{\b\ab\rtlch \ltrch\loch
+7. }{\b0\ab0\rtlch \ltrch\loch
+The rectangle class is not immutable, because it has mutators to change it's dimensions and coordinates.\line \line }{\b\ab\rtlch \ltrch\loch
+8. }{\b0\ab0\rtlch \ltrch\loch
+A side-effect occurs when a method call changes the state of the program outside of the object. When a BankAccount deposits some money, the only change that occurs is inside the BankAccount object, so the deposit method changing the BankAccount is not a side effect.\line \line }{\b\ab\rtlch \ltrch\loch
+9. }{\b0\ab0\rtlch \ltrch\loch
+In this case, this method does cause a side-effect. The Scanner.nextDouble() method changes the scanner internally. So next time nextDouble() is called, the result will be different. Since this change is in an object outside of the class calling it, this is considered a side effect.\line \line }{\b\ab\rtlch \ltrch\loch
+10. }{\b0\ab0\rtlch \ltrch\loch
+The transactionCount needs to increase each time a transaction occurs. So the withdraw and deposit  methods need to update transactionCount. Also, the bank might want to reset this value when the account is cleared, so the transactionCount might also be updated in a clear.\line \line }{\b\ab\rtlch \ltrch\loch
+11. }{\b0\ab0\rtlch \ltrch\loch
+This violates the principle of \u8220\'93Keep mutators and accessors seperate\u8221\'94. In order the get the value of the total purchase, you have to call two mutators, getPayment and receiveChange, both which change the value of the class. Instead, an accessor called getTotalPurchase should be provided, which calculates and returns the total purchase without change to the state of the object.\line \line }{\b\ab\rtlch \ltrch\loch
+12.}{\b0\ab0\rtlch \ltrch\loch
+ The add method is defined by the Question object because this minimizes dependicies. If it had not, then any class that depended on Question might also end up depending on ArrayList in order to modify the contents of Question. If later, the Question object switched from using ArrayList to just plain old java arrays, then all the objects depending on Question would have to modified as well. To avoid this possible future work, Question hides the ArrayList and provides an interface that modifies it.\line \line }{\b\ab\rtlch \ltrch\loch
+13.}{\b0\ab0\rtlch \ltrch\loch
+ In order to track all the purchases for CashRegister, you could make the instance variables ListArray<Double> purchases, and modify the recordPurchase function to add the given purchase to the purchases list. There should also be a clear method, which would reset to purchases list to an empty list. (assign to a new list, let the garbage collector eat up the old one). Finally, the accessor print reciept should be modified to use the purchases list to generate a reciept.\line \line }{\b\ab\rtlch \ltrch\loch
+14. }{\b0\ab0\rtlch \ltrch\loch
+Tax ID number should have a getter method, and should only be set once in the constructor, as the tax id is a value that should never change. Salary, however, can change when an employee gets a raise, so salary needs both an accessor and a mutator.\line \line }{\b\ab\rtlch \ltrch\loch
+15.}{\b0\ab0\rtlch \ltrch\loch
+ It is acceptable for a mutator to return a value if there is an accessor that computes it. In this case, there should also be a getName method to get the new name. This way, not only can you assure the name was changed, but you can also use the value! In otherwords, a boolean return value on a mutator indicates that there should be some condition that occurrs where the mutator was successful and the accessor can be used.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0\rtlch \ltrch\loch
+
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b\ab\rtlch \ltrch\loch
+16. }{\b0\ab0\rtlch \ltrch\loch
+The direction instance variable an example of defining an object with distinct states. The Bug class is missing constants to define the directions, specifically NORTH, SOUTH, EAST, and WEST.}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0\rtlch \ltrch\loch
+
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b\ab\rtlch \ltrch\loch
+17.}{\b0\ab0\rtlch \ltrch\loch
+ Two static variable of the System class are }{\i\b0\ai\ab0\rtlch \ltrch\loch
+out}{\b0\ab0\rtlch \ltrch\loch
+ and }{\i\b0\ai\ab0\rtlch \ltrch\loch
+in}{\b0\ab0\rtlch \ltrch\loch
+. I know this, because I can refer System.in when I constructor a scanner or System.out when I print to the command line. And I know these are variables because they begin with lowercase letters, in accordance with typical java convention.\line \line }{\b\ab\rtlch \ltrch\loch
+18. }{\b0\ab0\rtlch \ltrch\loch
+PI is a static constant of the math class, defined with the most accurate value of pi a double can hold.\line \line }{\b\ab\rtlch \ltrch\loch
+19. }{\b0\ab0\rtlch \ltrch\loch
+Average should be a static method because it doesn't require knowledge of any particular object instance. It just takes a list of numbers and returns the average of those numbers. Average is a pure function, and should therefore be a static method, preferably in some utility class like MathExtra.\line \line }{\b\ab\rtlch \ltrch\loch
+20. }{\b0\ab0\rtlch \ltrch\loch
+Ahhhhh! Someone kill Harry, before he does anymore harm to his code! No but seriously, Harry's method works, in the sense that it is possible to make it work with a lot of effort. However, it does not work in the sense that it makes maintaining and changing the code a monumental headache, because now every value is going to have to be a static list of values, all of it is in one file, which multiple programmers might have to work on, Selecting and tracking which values is a nightmare all on it's own. It's just not good design. Static variables and methods have their place in Java, but that place is not everywhere all the time.\line \line }{\b\ab\rtlch \ltrch\loch
+21. }{\b0\ab0\rtlch \ltrch\loch
+\line }{\b\ab\rtlch \ltrch\loch
+EarthquakeTest.java}{\b0\ab0\rtlch \ltrch\loch
+\line }{\cf2\rtlch \ltrch\loch\fs24\loch\f5
+import}{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+ org.junit.Test;}{\rtlch \ltrch\loch
+\line }{\cf2\rtlch \ltrch\loch\fs24\loch\f5
+import}{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+ org.junit.Assert;}{\rtlch \ltrch\loch
+\line \line }{\cf2\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf2\rtlch \ltrch\loch\fs24\loch\f5
+class}{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+ EarthquakeTest}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+\{}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+   @Test}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+   }{\cf2\rtlch \ltrch\loch\fs24\loch\f5
+public}{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+ }{\cf2\rtlch \ltrch\loch\fs24\loch\f5
+void}{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+ smallQuake()}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+      Earthquake quake = }{\cf2\rtlch \ltrch\loch\fs24\loch\f5
+new}{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+ Earthquake(1.0);}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+      String expectedDescription = }{\cf3\rtlch \ltrch\loch\fs24\loch\f5
+"No destruction of buildings"}{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+;}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+      Assert.assertEquals(expectedDescription, quake.getDescription());}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\rtlch \ltrch\loch\fs24\loch\f5
+\}}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140\sb0\sa0{\b0\ab0\rtlch \ltrch\loch
+\line }{\b\ab\rtlch \ltrch\loch
+22. }{\b0\ab0\rtlch \ltrch\loch
+The EPSILON value given to the assertEquals method is a tolerance limit for comparing doubles. That is, it's the maximum difference two doubles can have before they are considered not equal. This is to account for rounding errors.}
+\par }
