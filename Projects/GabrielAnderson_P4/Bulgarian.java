@@ -11,13 +11,15 @@ public class Bulgarian
    
    public Bulgarian(int numberOfPiles)
    {
-      this(numberOfPiles, generator.nextInt(45) + 1);
+      this.soughtPiles = numberOfPiles;
+      this.piles = new int[numberOfPiles];
+      this.deckSize = sumOneToN(soughtPiles);
    }
    
-   public Bulgarian(int numberOfPiles, int deckSize)
+   private int sumOneToN(int n)
    {
-      this.piles = new int[numberOfPiles];
-      this.deckSize = deckSize;
+      // Use gauss's trick for adding numbers
+      return n * (n + 1) / 2;
    }
    
    public void play()
@@ -30,7 +32,6 @@ public class Bulgarian
          piles = removeZeros(piles);
          
          steps++;
-         
          
          // print current state
          String message = "";
@@ -59,19 +60,21 @@ public class Bulgarian
    
    public int[] createPiles()
    {
+      int intialNumberOfPiles = generator.nextInt(soughtPiles) + 1;
+      int[] newPiles = new int[intialNumberOfPiles];
       // For each card in the deck
       for(int cardCount = 0; cardCount < deckSize; cardCount++)
       {
          // Pick a random pile
-         int currentPile = generator.nextInt(piles.length);
+         int currentPile = generator.nextInt(newPiles.length);
          
          // Increase the pile's size by 1
-         piles[currentPile] += 1; 
+         newPiles[currentPile] += 1; 
       }
       
-      piles = removeZeros(piles);
+      newPiles = removeZeros(newPiles);
       
-      return piles;
+      return newPiles;
    }
    
    public int[] playARound(int[] piles)
@@ -95,6 +98,11 @@ public class Bulgarian
       // Count the number of zeros
       int zeroCount = getZeroCount(piles);
       
+      if(zeroCount == 0)
+      {
+         return piles;
+      }
+      
       // Make an array the size of the old one
       // minus the number of zeros
       int newSize = piles.length - zeroCount;
@@ -115,7 +123,7 @@ public class Bulgarian
       return newPiles;
    }
    
-   private int getZeroCount(int[] pile)
+   private int getZeroCount(int[] piles)
    {
       int zeroCount = 0;
       for(int pileIndex = 0; pileIndex < piles.length; pileIndex++)
