@@ -9,12 +9,14 @@ public class Bulgarian
    private int[] piles;
    private static final Random generator = new Random();
    
+   private static final int[] EMPTY_PILES = { 0 };
+   
    public Bulgarian(int numberOfPiles)
    {
-      this.soughtPiles = numberOfPiles;
-      this.piles = new int[numberOfPiles];
-      this.deckSize = sumOneToN(soughtPiles);
-      this.steps = 0;
+      soughtPiles = Math.abs(numberOfPiles);
+      piles = new int[soughtPiles];
+      deckSize = sumOneToN(soughtPiles);
+      steps = 0;
    }
    
    private int sumOneToN(int n)
@@ -74,6 +76,12 @@ public class Bulgarian
    
    public int[] createPiles()
    {
+      if(soughtPiles == 0)
+      {
+         this.piles = EMPTY_PILES;
+         return EMPTY_PILES;
+      }
+      
       int intialNumberOfPiles = generator.nextInt(soughtPiles) + 1;
       int[] newPiles = new int[intialNumberOfPiles];
       // For each card in the deck
@@ -93,7 +101,7 @@ public class Bulgarian
    }
    
    public int[] playARound(int[] piles)
-   {
+   {  
       // create the new pile list
       int[] newPiles = new int[piles.length + 1];
       
@@ -111,6 +119,12 @@ public class Bulgarian
    
    private int[] removeZeros (int[] piles)
    {
+      if(soughtPiles == 0)
+      {
+         this.piles = EMPTY_PILES;
+         return EMPTY_PILES;
+      }
+      
       // Count the number of zeros
       int zeroCount = getZeroCount(piles);
       
@@ -143,6 +157,11 @@ public class Bulgarian
    
    private int getZeroCount(int[] piles)
    {
+      if(soughtPiles == 0)
+      {
+         return 0;
+      }
+      
       int zeroCount = 0;
       for(int pileIndex = 0; pileIndex < piles.length; pileIndex++)
       {
@@ -156,6 +175,11 @@ public class Bulgarian
    
    public boolean winningConfig(int[] piles)
    {
+      if(soughtPiles == 0)
+      {
+         return true;
+      }
+      
       // For each pile
       for (int pileIndex = 0; pileIndex < piles.length; pileIndex++)
       {
