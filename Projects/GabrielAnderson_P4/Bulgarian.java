@@ -14,6 +14,7 @@ public class Bulgarian
       this.soughtPiles = numberOfPiles;
       this.piles = new int[numberOfPiles];
       this.deckSize = sumOneToN(soughtPiles);
+      this.steps = 0;
    }
    
    private int sumOneToN(int n)
@@ -24,28 +25,41 @@ public class Bulgarian
    
    public void play()
    {
-      piles = createPiles();
+      createPiles();
       
       while(!winningConfig(piles))
       {
-         piles = playARound(piles);
-         piles = removeZeros(piles);
+         playARound(this.piles);
+         removeZeros(this.piles);
          
          steps++;
          
-         // print current state
-         String message = "";
-         message += deckSize + " cards. ";
-         message += "Step " + steps + ": ";
-         
-         for(int pile : piles)
-         {
-            message += pile + " ";
-         }
-         
-         System.out.println(message);
-         
+         System.out.printf("%d cards. Step %d: ", deckSize, steps);
+         printPiles();
+         System.out.println();
       }
+      
+      System.out.print("Winning Pile: ");
+      printPiles();
+      System.out.println();
+   }
+   
+   public void printPiles()
+   {
+      for(int pile : piles)
+      {
+         System.out.printf("%d ", pile);
+      }
+   }
+   
+   public int getSteps()
+   {
+      return steps;
+   }
+   
+   public int getDeckSize()
+   {
+      return deckSize;
    }
    
    public int[] getPiles()
@@ -74,6 +88,7 @@ public class Bulgarian
       
       newPiles = removeZeros(newPiles);
       
+      this.piles = newPiles;
       return newPiles;
    }
    
@@ -90,6 +105,7 @@ public class Bulgarian
       
       newPiles[piles.length] += piles.length;
       
+      this.piles = newPiles;
       return newPiles;
    }
    
@@ -120,6 +136,8 @@ public class Bulgarian
          }
       }
       
+      
+      this.piles = newPiles;
       return newPiles;
    }
    

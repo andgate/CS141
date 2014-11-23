@@ -1,0 +1,1784 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq2\fcharset0 Calibri;}{\f6\froman\fprq2\fcharset0 Times New Roman;}{\f7\froman\fprq2\fcharset0 Courier New;}{\f8\froman\fprq2\fcharset0 Monospaced.plain;}{\f9\fnil\fprq2\fcharset0 0;}{\f10\fnil\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f11\fnil\fprq2\fcharset0 Courier New;}{\f12\fnil\fprq2\fcharset0 Lohit Hindi;}{\f13\fnil\fprq2\fcharset0 Times New Roman;}{\f14\fnil\fprq0\fcharset128 Lohit Hindi;}}
+{\colortbl;\red0\green0\blue0;\red148\green30\blue223;\red0\green203\blue0;\red250\green100\blue0;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\sl252\slmult1\ql\widctlpar\sb0\sa160\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af10\langfe1081\dbch\af10\afs24\alang1081\loch\f5\fs22\lang1033 Normal;}
+{\*\cs15\snext15 Default Paragraph Font;}
+{\*\cs16\snext16\dbch\af11 ListLabel 1;}
+{\s17\sbasedon0\snext18\sl252\slmult1\ql\widctlpar\sb240\sa120\keepn\ltrpar\cf1\kerning1\dbch\af12\langfe1025\dbch\af12\afs28\loch\f4\fs28\lang1033 Heading;}
+{\s18\sbasedon0\snext18\sl288\slmult1\ql\widctlpar\sb0\sa140\ltrpar\cf1\kerning1\dbch\af10\langfe1025\dbch\af10\afs24\loch\f5\fs22\lang1033 Text Body;}
+{\s19\sbasedon18\snext19\sl288\slmult1\ql\widctlpar\sb0\sa140\ltrpar\cf1\kerning1\dbch\af12\langfe1025\dbch\af14\afs24\loch\f5\fs22\lang1033 List;}
+{\s20\sbasedon0\snext20\sl252\slmult1\ql\widctlpar\sb120\sa120\noline\ltrpar\cf1\i\kerning1\dbch\af12\langfe1025\dbch\af14\afs24\ai\loch\f5\fs24\lang1033 Caption;}
+{\s21\sbasedon0\snext21\sl252\slmult1\ql\widctlpar\sb0\sa160\noline\ltrpar\cf1\kerning1\dbch\af12\langfe1025\dbch\af14\afs24\loch\f5\fs22\lang1033 Index;}
+{\s22\sbasedon0\snext22\sl252\slmult1\ql\widctlpar\li720\ri0\lin720\rin0\fi0\sb0\sa160\contextualspace\ltrpar\cf1\kerning1\dbch\af10\langfe1025\dbch\af10\afs24\loch\f5\fs22\lang1033 List Paragraph;}
+}{\info{\author ganderson}{\creatim\yr2014\mo11\dy19\hr20\min33}{\revtim\yr2014\mo11\dy22\hr1\min47}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern67306497}}\deftab720
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\pgdscnxt0 Default Style;}}
+\formshade{\*\pgdscno0}\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep}\pgndec\pard\plain \s0\sl252\slmult1\ql\widctlpar\sb0\sa160\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af10\langfe1081\dbch\af10\afs24\alang1081\loch\f5\fs22\lang1033\sl252\slmult1\ql\widctlpar\sb0\sa160{\cf1\kerning1\dbch\af9\langfe1025\rtlch \ltrch\loch\fs22\lang1033
+Gabriel Anderson, Marcus Mui}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af9\langfe1025\rtlch \ltrch\loch\fs22\lang1033
+CS&141}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af9\langfe1025\rtlch \ltrch\loch\fs22\lang1033
+Chapter 11, Day 1}{\rtlch \ltrch\loch
+\line \line }{\cf1\b\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+1.}{\cf1\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+ modularize FlushScanner.java.}{\rtlch \ltrch\loch
+\line }{{\*\bkmkstart _GoBack}\cf1\b\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+GetValidInteger.java}{{\*\bkmkend _GoBack}\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+import}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ java.util.Scanner;}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+import}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ java.util.Arrays;}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+import}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ java.util.Random;}{\rtlch \ltrch\loch
+\line \line }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+public}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+class}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ GetValidInteger}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+\{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ askInt(Scanner in, }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ lowest, }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ highest)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ enteredValue = 0;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+boolean}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ isDone = }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+false}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+while}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+(!isInRange(enteredValue, lowest, highest))}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         enteredValue = getInteger(in, lowest, highest);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         isDone = validateInputCheck(enteredValue, lowest, highest);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+return}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ enteredValue;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ getInteger(Scanner in, }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ lowest, }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ highest)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{                           }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+while}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+(}{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+true}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.out.print(}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"Enter an integer ( "}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ + lowest}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+                        +}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+" to "}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ + highest + }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+")? "}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+                        }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+if}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ (in.hasNext() && in.hasNextInt())}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+            }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+return}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ in.nextInt();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \} }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+else}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+            flushInvalidInput(in);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+boolean}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ validateInputCheck(}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+\tab int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ enteredValue, }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ lowest, }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ highest)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+if}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+(!isInRange(enteredValue, lowest, highest))}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.out.println(enteredValue }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+               + }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+" is out of range. Please try again."}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+return}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+false}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+return}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+true}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+boolean}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ isInRange(}{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ x, }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ a, }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ b)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+if}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+(a > b)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+return}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ (a >= x && x >= b);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+     }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+return}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ (b >= x && x >= a);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+void}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ flushInvalidInput(Scanner in)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      String junk = in.next(); }{\cf4\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+//consume/sremove this input        }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      System.out.println(}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"'"}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ + junk }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         + }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"' is invalid input. Please try again."}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+final}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ LOW = 1;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+final}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ HIGH = 3;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+public}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+void}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ main(String[] args)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      Scanner in = }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+new}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ Scanner(System.in);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ enteredValue = askInt(in, LOW, HIGH);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+assert}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+(enteredValue >= HIGH);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+assert}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+(LOW <= enteredValue);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      System.out.print(}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"you entered: "}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ + enteredValue);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      in.close();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+\}}{\rtlch \ltrch\loch
+\line \line }{\cf1\b\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+2.}{\cf1\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+ p. 552 E11.1 output then input.}{\rtlch \ltrch\loch
+\line }{\cf1\b\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+HelloPrinter.java}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+import}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ java.io.PrintWriter;}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+import}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ java.io.File;}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+import}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ java.util.Scanner;}{\rtlch \ltrch\loch
+\line \line }{\cf4\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+/**}{\rtlch \ltrch\loch
+\line }{\cf4\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   @version 2}{\rtlch \ltrch\loch
+\line }{\cf4\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ */}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+public}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+class}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ HelloPrinter}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+\{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+final}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ String HELLO_FILENAME = }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"hello.txt"}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+final}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ String HELLO_TEXT = }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"Hello World!"}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+public}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+void}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ main(String[] args)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      writeTextFile(HELLO_FILENAME, HELLO_TEXT);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      String text = readTextFile(HELLO_FILENAME);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      System.out.println(text);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+void}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ writeTextFile(String filename, String text)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+try}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         PrintWriter out = }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+new}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ PrintWriter(filename);;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+try}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+           out.print(text);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+finally}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+            out.close();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+catch}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+(java.io.FileNotFoundException e)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.out.println(}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"ERROR: "}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ + filename + }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+" not found."}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.out.println(}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"Could not write file."}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.exit(0);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ String readTextFile(String filename)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      String contents = }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+""}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+try}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         File file = }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+new}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ File(filename);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         Scanner in = }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+new}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ Scanner(file);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+try}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+            in.useDelimiter(}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"\\\\Z"}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+            contents = in.next();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+finally}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+            in.close();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+     }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+catch}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+(java.io.FileNotFoundException e)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.out.println(}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"ERROR: "}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ + filename + }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+" not found."}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.out.println(}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"Could not read file."}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.exit(0);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+return}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ contents;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+\}}{\rtlch \ltrch\loch
+\line \line }{\cf1\b\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+3.}{\cf1\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+ E11.2 and 11.3 insert line numbers on output + set filename on command line.}{\rtlch \ltrch\loch
+\line }{\cf1\b\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+InsertLineNumbers.java}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+import}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ java.util.Scanner;}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+import}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ java.io.File;}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+import}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ java.io.PrintWriter;}{\rtlch \ltrch\loch
+\line \line }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+public}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+class}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ InsertLineNumbers}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+\{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ String inFilename;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ String outFilename;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+public}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+void}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ main(String[] args)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      parseArgs(args);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      String content = getFileContents(inFilename);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      String numberedContent = appendLineNumbers(content);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      writeToFile(outFilename, numberedContent);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ String appendLineNumbers(String content)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      Scanner lines = }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+new}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ Scanner(content);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      String output = }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+""}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+int}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ lineNumber = 1;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+while}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+(lines.hasNextLine())}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         String line = lines.nextLine();}{\rtlch \ltrch\loch
+\line \line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         output += }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"/* "}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         output += lineNumber;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+        output += }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+" */ "}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ + line + }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"\\n"}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         lineNumber++;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+return}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ output;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ String getFileContents(String filename)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      String contents = }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+""}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+try}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         File file = }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+new}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ File(filename);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         Scanner in = }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+new}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ Scanner(file);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+try}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+            in.useDelimiter(}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"\\\\Z"}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+           contents = in.next();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+finally}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+            in.close();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+catch}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+(java.io.FileNotFoundException e)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.out.println(}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"ERROR: "}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ + filename + }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+" not found."}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.out.println(}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"Could not read file."}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.exit(0);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+return}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ contents;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+void}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ writeToFile(String filename, String text)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+try}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         PrintWriter out = }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+new}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ PrintWriter(filename);;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+try}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+            out.print(text);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+finally}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+            out.close();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+catch}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+(java.io.FileNotFoundException e)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.out.println(}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"ERROR: "}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ + filename + }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+" not found."}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.out.println(}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"Could not write file."}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.exit(0);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+void}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ parseArgs(String[] args)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+if}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+(args.length != 2)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         printUsage();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         System.exit(0);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      inFilename = args[0];}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      outFilename = args[1];}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+if}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+(inFilename.equals(outFilename))}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         printSameFileError();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+void}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ printUsage()}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      System.out.println(}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+         }{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"Usage: java InsertLineNumbers infile outfile"}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+private}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+static}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ }{\cf2\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+void}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+ printSameFileError()}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+      System.out.println(}{\cf3\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+"Filenames must be different"}{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af11\langfe1025\rtlch \ltrch\loch\fs20\lang1033\loch\f7
+\}}{\rtlch \ltrch\loch
+\line \line }{\cf1\b\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+4.}{\cf1\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+ E11.5 count chars, words lines (including white space characters).}{\rtlch \ltrch\loch
+\line }{\cf1\b\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+TextFileAnalyzer.java}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+import}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ java.util.Scanner;}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+import}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ java.io.File;}{\rtlch \ltrch\loch
+\line \line }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+public}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+class}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ TextFileAnalyzer}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+\{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+public}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+static}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+void}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ main(String[] args)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      String text = readTextFile(askFilename());}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+int}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ lineCount = getLineCount(text);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+int}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ wordCount = getWordCount(text);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+int}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ charCount = getCharCount(text);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      System.out.println(}{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+"Lines:      "}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ + lineCount);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      System.out.println(}{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+"Words:      "}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ + wordCount);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      System.out.println(}{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+"Characters: "}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ + charCount);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+private}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+static}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ String askFilename()}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      Scanner in = }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+new}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ Scanner(System.in);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      System.out.print(}{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+"Enter the name of the file: "}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+return}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ in.next();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+  }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+private}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+static}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ String readTextFile(String filename)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      String contents = }{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+""}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+try}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         File file = }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+new}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ File(filename);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         Scanner in = }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+new}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ Scanner(file);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+try}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+            in.useDelimiter(}{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+"\\\\Z"}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+            contents = in.next();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+finally}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+            in.close();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+catch}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+(java.io.FileNotFoundException e)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         System.out.println(}{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+"ERROR: "}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ + filename + }{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+" not found."}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         System.out.println(}{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+"Could not read file."}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         System.exit(0);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+return}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ contents;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+private}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+static}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+int}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ getLineCount(String text)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      Scanner lines = }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+new}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ Scanner(text);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+int}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ lineCount = 0;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+while}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+(lines.hasNextLine())}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         lineCount++;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         lines.nextLine();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+return}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ lineCount;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+private}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+static}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+int}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ getWordCount(String text)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+     Scanner words = }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+new}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ Scanner(text);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+int}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ wordCount = 0;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+while}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+(words.hasNext())}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         wordCount++;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         words.next();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+return}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ wordCount;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+private}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+static}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+int}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ getCharCount(String text)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      Scanner chars = }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+new}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ Scanner(text);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      chars.useDelimiter(}{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+""}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+int}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ charCount = 0;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+while}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+(chars.hasNext())}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         charCount++;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         chars.next();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+return}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ charCount;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+\}}{\rtlch \ltrch\loch
+\line \line }{\cf1\b\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+5.}{\cf1\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+ E11.6 find lines in files containing a specified string; use command line.}{\rtlch \ltrch\loch
+\line }{\cf1\b\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+Find.java}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+import}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ java.util.ArrayList;}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+import}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ java.util.Scanner;}{\rtlch \ltrch\loch
+\line \line }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+public}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+class}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ Find}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+\{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+private}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+static}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ String targetWord;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+private}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+static}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ ArrayList<TextFile> files;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+public}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+static}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+void}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ main(String[] args)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      parseArgs(args);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      searchFiles();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+private}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+static}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+void}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ searchFiles()}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+for}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+(TextFile file : files)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \{ }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         Scanner lines = }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+new}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ Scanner(file.text);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+while}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+(lines.hasNextLine())}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+            String currentLine = lines.nextLine();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+            }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+if}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+(doesLineContain(targetWord, currentLine))}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+            \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+               System.out.println(file.filename}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+                  + }{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+": "}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ + currentLine);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+            \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+private}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+static}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+boolean}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ doesLineContain(String word, String line)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      Scanner words = }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+new}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ Scanner(line);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+while}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+(words.hasNext())}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         String currentWord = words.next();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+if}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+(currentWord.equals(word))}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+            }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+return}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+true}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+return}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+false}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+private}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+static}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+void}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ parseArgs(String[] args)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+if}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+(args.length < 2)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         printUsage();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         System.exit(0);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+     \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      targetWord = args[0];}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      files = }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+new}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ ArrayList<>();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+for}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+(}{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+int}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ argIndex = 1; argIndex < args.length; argIndex++)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         TextFile newFile = }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+new}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ TextFile(args[argIndex]);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         files.add(newFile);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+private}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+static}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+void}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ printUsage()}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      System.out.println(}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         }{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+"Usage: java Find word file1 file2 file3..."}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         );}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+\}}{\rtlch \ltrch\loch
+\line \line }{\cf1\b\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs22\lang1033
+TextFile.java}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+import}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ java.util.Scanner;}{\rtlch \ltrch\loch
+\line }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+import}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ java.io.File;}{\rtlch \ltrch\loch
+\line \line }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+public}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+class}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ TextFile}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+\{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+public}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ String filename;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+public}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ String text;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+public}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ TextFile(String filename)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+this}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+.filename = filename;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      text = readTextFile(filename);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+private}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+static}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ String readTextFile(String filename)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+     String contents = }{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+""}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+try}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         File file = }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+new}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ File(filename);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         Scanner in = }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+new}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ Scanner(file);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+try}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+            in.useDelimiter(}{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+"\\\\Z"}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+            contents = in.next();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+finally}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+            in.close();}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+catch}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+(java.io.FileNotFoundException e)}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \{}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         System.out.println(}{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+"ERROR: "}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ + filename + }{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+" not found."}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         System.out.println(}{\cf3\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+"Could not read file."}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+         System.exit(0);}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+      }{\cf2\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+return}{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ contents;}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+   \}}{\rtlch \ltrch\loch
+\line }{\cf1\kerning1\dbch\af10\langfe1081\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+\}}{\rtlch \ltrch\loch
+\line \line }{\cf1\b\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+6. }{\cf1\kerning1\dbch\af13\langfe1025\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+modify worked-example_1 baby names to include counts, % and cumulative % with 2 decimal places.}{\rtlch \ltrch\loch
+\line }{\b\ab\rtlch \ltrch\loch
+BabyNames.java}{\rtlch \ltrch\loch
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+import}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ java.io.File;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+import}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ java.io.FileNotFoundException;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+import}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ java.util.Scanner;}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+class}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ BabyNames}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ LIMIT = 50;}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ main(String[] args) }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+throws}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ FileNotFoundException}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \{  }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      Scanner in = }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ Scanner(}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ File(}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"babynames.txt"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+));}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      RecordReader boys = }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ RecordReader(LIMIT);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      RecordReader girls = }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ RecordReader(LIMIT);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+while}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ (boys.hasMore() || girls.hasMore())}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ rank = in.nextInt();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         System.out.print(rank + }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+" "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         boys.process(in);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         girls.process(in);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         System.out.println();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      System.out.printf(}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"Total percent of boys listed: %.2f%%\\n"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+, boys.getTotal());}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      System.out.printf(}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"Total percent of girls listed: %.2f%%\\n"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+, girls.getTotal());}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      in.close();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+\}  }{\rtlch \ltrch\loch
+\line }
+\par \pard\plain \s0\sl252\slmult1\ql\widctlpar\sb0\sa160\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af10\langfe1081\dbch\af10\afs24\alang1081\loch\f5\fs22\lang1033\sl252\slmult1\ql\widctlpar\sb0\sa160{\b\ab\rtlch \ltrch\loch
+RecordReader.java}{\rtlch \ltrch\loch
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+import}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ java.util.Scanner;}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   This class processes baby name records.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+*/}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+class}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ RecordReader}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ total;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ limit;}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+  }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      Constructs a RecordReader with a zero total.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ RecordReader(}{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ aLimit)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      total = 0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      limit = aLimit;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ getTotal()}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ total;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      Reads an input record and prints the name if the current total is less }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      than the limit.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      @param in the input stream}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ process(Scanner in)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      String name = in.next();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ count = in.nextInt();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ percent = in.nextDouble();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ (total < limit)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{ }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         System.out.print(name);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         System.out.printf(}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"(%d, %.2f%%) "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+, count, percent);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      total = total + percent;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      Checks whether there are more inputs to process}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      @return true if the limit has not yet been reached}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+boolean}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ hasMore()}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f8
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ total < limit;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+\}}
+\par }
