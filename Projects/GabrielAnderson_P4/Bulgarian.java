@@ -33,7 +33,9 @@ public class Bulgarian
    
    /**
       Constructs a Bulgarian object, that plays to build
-      the given number of piles.
+      the given number of piles. Handles negative piles by 
+      using the absolute value for the numberOfPiles given.
+      Also handles zero piles.
       @param numberOfPiles The number of piles the game will finish with.
     */
    public Bulgarian(int numberOfPiles)
@@ -356,13 +358,13 @@ public class Bulgarian
    
    
    private static final String SOUGHT_PILES_FORMAT
-      = "Sought piles %d";
+      = "Sought piles %d\n";
    private static final String DECK_SIZE_FORMAT
-      = "Deck size: %d";
+      = "Deck size: %d\n";
    private static final String STEPS_FORMAT
-      = "Steps: %d";
+      = "Steps: %d\n";
    private static final String PILES_FORMAT
-      = "Piles: %s";
+      = "Piles: %s\n";
    
    /**
       Get the information about the current game.

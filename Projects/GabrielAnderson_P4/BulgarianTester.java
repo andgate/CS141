@@ -4,7 +4,7 @@ import java.util.Scanner;
    This class if for testing a Bulgarian object.</br>
    <p>COPYRIGHT &copy; 2014 Gabriel Anderson. All Rights Reserved.
    @author Gabriel Anderson
-   @since 23 November 2014
+   @since 22 November 2014
    @version 1.0
  */
 public class BulgarianTester
@@ -23,7 +23,7 @@ public class BulgarianTester
    private static final String YES_RESPONSE
       = "Y";
    private static final String NO_RESPONSE
-      = "N";  
+      = "N";
    
    /**
       The entry point for the tester.
