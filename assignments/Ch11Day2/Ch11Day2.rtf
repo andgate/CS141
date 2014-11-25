@@ -29,7 +29,7 @@
 {\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi-1296\li1296}
 {\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi-1440\li1440}
 {\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi-1584\li1584}\listid2}
-}{\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}{\info{\author ganderson}{\creatim\yr2014\mo11\dy24\hr13\min5}{\revtim\yr2014\mo11\dy25\hr11\min32}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern67306497}}\deftab720
+}{\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}{\info{\author ganderson}{\creatim\yr2014\mo11\dy24\hr13\min5}{\revtim\yr2014\mo11\dy25\hr12\min55}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern67306497}}\deftab720
 \viewscale108
 {\*\pgdsctbl
 {\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\pgdscnxt0 Default Style;}}
@@ -1130,6 +1130,556 @@ return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
 \}}{\rtlch \ltrch\loch
 \line }
 \par \pard\plain \s0\sl256\slmult1\ql\widctlpar\faauto\li0\ri0\lin0\rin0\fi0\sb0\sa160\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\dbch\af10\langfe1033\dbch\af13\afs22\alang1025\cf0\kerning1\loch\f5\fs22\lang1033{\listtext\pard\plain \dbch\af13 4.\tab}\ilvl0\ls1 \li1095\ri0\lin1095\rin0\fi-360\sl300\slmult0\ql\widctlpar\tx1095\faauto\li375\ri0\lin375\rin0\fi-360\sb100\sa100\cbpat6{\cf2\langfe1033\dbch\af10\afs20\alang1025\rtlch \ltrch\loch\fs20\lang1033\loch\f6
-p. 555 P11.9 cash transaction file (if time)}{\rtlch \ltrch\loch
-\line }
+p. 555 P11.9 cash transaction file (if time)\line }{\cf2\b\langfe1033\dbch\af10\afs24\alang1025\ab\rtlch \ltrch\loch\fs24\lang1033\loch\f6
+RegisterCheck.java}{\rtlch \ltrch\loch
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+import}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ java.util.Scanner;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+import}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ java.io.File;}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+class}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ RegisterCheck}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ String TRANSACTIONS_FILENAME}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"transactions.txt"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ String RECEIVED = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"R"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ String PAID = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"P"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ String CASH_START_ECHO}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"Enter amount of cash in register at start of day: "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ String CASH_END_ECHO}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"Enter amount of cash in register at end of day: "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ String CORRUPT_FILE_ECHO}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"Error: "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ + TRANSACTIONS_FILENAME + }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+" is corrupt."}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ String CORRUPT_SYSTEM_ECHO}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"Something broke!"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ main(String[] args)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      Scanner in = }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ Scanner(System.in);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ startCash = askMoney(in, CASH_START_ECHO);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ endCash = askMoney(in, CASH_END_ECHO);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      String transactionsText = readTextFile(TRANSACTIONS_FILENAME);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ total = sumTransactions(transactionsText);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ expectedEndCash = startCash + total;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+(expectedEndCash == endCash)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"Everything is accounted for."}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+else}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"Something is missing."}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ sumTransactions(String transactions)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ total = 0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+     }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      Scanner text = }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ Scanner(transactions);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+try}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+while}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+(text.hasNext())}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+            total += getAmountFromLine(text);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+catch}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ (java.lang.IllegalStateException e)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         systemError();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ total;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ getAmountFromLine(Scanner in)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ amount = 0.0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      String type = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+""}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+     }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+try}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         in.next();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         amount = in.nextDouble();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         type = sanitizeInput(in.next());}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+catch}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ (java.util.InputMismatchException e)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         corruptFileError();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+catch}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ (java.util.NoSuchElementException e)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         corruptFileError();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+catch}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ (java.lang.IllegalStateException e)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         systemError();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ (type.equals(RECEIVED))}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         }{\cf5\afs20\rtlch \ltrch\loch\fs20\loch\f8
+// Seems redundant}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         }{\cf5\afs20\rtlch \ltrch\loch\fs20\loch\f8
+// but could be useful}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         }{\cf5\afs20\rtlch \ltrch\loch\fs20\loch\f8
+// in the future}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         amount = Math.abs(amount);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+else}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ (type.equals(PAID))}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         amount = -1 * Math.abs(amount);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+else}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         corruptFileError();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ amount;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ String sanitizeInput(String input)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+     }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ input.trim().toUpperCase().substring(0,1);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ askMoney(Scanner in, String prompt)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \{                        }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+while}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+(}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+true}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         System.out.print(prompt);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ (in.hasNext() && in.hasNextDouble())}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+            }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ in.nextDouble();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         \} }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+else}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+            flushInvalidInput(in);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ flushInvalidInput(Scanner in)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      String junk = in.next(); }{\cf5\afs20\rtlch \ltrch\loch\fs20\loch\f8
+//consume}{\cf5\afs20\rtlch \ltrch\loch\fs20\loch\f8
+s}{\cf5\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ this input        }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"'"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ + junk }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         + }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"' is invalid input. Please try again."}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+  }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ String readTextFile(String filename)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      String contents = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+""}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+try}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         File file = }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ File(filename);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         Scanner in = }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ Scanner(file);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+try}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+            in.useDelimiter(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"\\\\Z"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+            contents = in.next();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+finally}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+            in.close();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+catch}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+(java.io.FileNotFoundException e)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"ERROR: "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ + filename + }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+" not found."}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         System.out.println(}{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f8
+"Could not read file."}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+         System.exit(0);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ contents;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ corruptFileError()}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      System.out.println(CORRUPT_FILE_ECHO);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      System.exit(0);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f8
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+ systemError()}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      System.out.println(CORRUPT_SYSTEM_ECHO);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+      System.exit(0);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f8
+\}}
 \par }
