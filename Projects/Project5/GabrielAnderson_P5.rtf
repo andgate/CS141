@@ -1,0 +1,1147 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq2\fcharset0 Monospaced.plain;}{\f6\fnil\fprq2\fcharset0 DejaVu Sans;}{\f7\fnil\fprq2\fcharset0 Lohit Hindi;}{\f8\fnil\fprq0\fcharset128 Lohit Hindi;}}
+{\colortbl;\red0\green0\blue0;\red250\green100\blue0;\red148\green30\blue223;\red0\green203\blue0;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033 Normal;}
+{\s15\sbasedon0\snext16\sb240\sa120\keepn\dbch\af6\dbch\af7\afs28\loch\f4\fs28 Heading;}
+{\s16\sbasedon0\snext16\sl288\slmult1\sb0\sa140 Text Body;}
+{\s17\sbasedon16\snext17\sl288\slmult1\sb0\sa140\dbch\af8 List;}
+{\s18\sbasedon0\snext18\sb120\sa120\noline\i\dbch\af8\afs24\ai\fs24 Caption;}
+{\s19\sbasedon0\snext19\noline\dbch\af8 Index;}
+}{\info{\creatim\yr2014\mo11\dy30\hr22\min33}{\revtim\yr2014\mo11\dy30\hr22\min49}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern67306497}}\deftab720
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Default Style;}}
+\formshade\paperh15840\paperw12240\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep\chftnsep}\pgndec\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch
+Gabriel Anderson}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch
+CS&141, S1\line Project 5}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs40\rtlch \ltrch\loch\fs40
+Source Code}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\b\ab\rtlch \ltrch\loch
+CannonBall.java}{\rtlch \ltrch\loch
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   The purpose of this CannonBall class is to simulate}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   the motion of a CannonBall when fired from a cannon}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   at a particular angle and initial velocity, assuming}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   a constant velocity.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   @author Gabriel Anderson, Erickson Victor}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   @version 1.0}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   @since November 30, 2014}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+class}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ CannonBall}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ elapsed;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ xPos;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ xVel;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ yPos;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ yVel;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ String LOCATION_FORMAT}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f5
+"time:%5.2fs, x:%5.2fm, y:%5.2fm"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ String GROUND}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f5
+"|"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ String CANNON_BALL}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+     = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f5
+"*"}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ CLOCK_TICK_SECONDS}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = 0.1;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ MAX_ELAPSED_SECONDS}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = 2.0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ DEFAULT_X_POSITION}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = 0.0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ String EMPTY_SPACE}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f5
+" "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ GRAVITY_METERS_PER_SECONDS_SQUARED}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = -9.8;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ String SPACE_BETWEEN_GROUND_AND_TEXT}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f5
+"    "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ SCALE}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = 1;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ DEGREES_TO_RADIANS}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = Math.PI / 180.0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ EPSILON}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = 1.0 / 1E15;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Construct a cannonball at the default x position of zero.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+    */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ CannonBall()}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Use CannonBall(double xPos) to construct}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// a cannonball with a x pos of 0.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+this}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+(0.0);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Construct a cannonball at the given x position.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param xPos The x position where the cannonball is fired.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+    */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ CannonBall(}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ xPos)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Initialize the cannonball with the given xPos.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Initialize the rest of the instance variables with zeros.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      elapsed = 0.0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      xPos = xPos;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      xVel = 0.0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      yPos = 0.0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      yVel = 0.0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Displays a graphic of the cannon ball and the ground at a given y postion.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Only prints text to the console.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param yPos The position of the cannonball above the ground.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+    */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ displayGraphic(}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ yPos)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// The yPos is the distance between the ground and the}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// cannonball. With that, display it with text-graphiic.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Print out the ground with it's space.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      System.out.print(SPACE_BETWEEN_GROUND_AND_TEXT + GROUND);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Use the repeat String method to print out the}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// blank spaces between the ground and the cannonball}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// based on the (yPos - 1).}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ spaceSize = (}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+)Math.ceil(yPos - 1);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      System.out.print(repeat(EMPTY_SPACE, spaceSize));}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Print out the cannon ball.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Then print a newline.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      System.out.print(CANNON_BALL);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      System.out.println();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Display the current elapsed time and x+y coordinates.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Only prints text to the console.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param elapsed The current elapsed time.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param xPos The current x position.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param yPos The current y position.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+    */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ displayLocation(}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ elapsed, }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ xPos, }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ yPos)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Use printf to format the output with elapsed time,}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// x position, and y position.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      System.out.printf(LOCATION_FORMAT, elapsed, xPos, yPos);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Get the current x position.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @return The current x position.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+    */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ getX()}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Just return xPos.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ xPos;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Get the current y position.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @return The current y position.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+    */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ getY()}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Just return yPos}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ yPos;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+  }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Get the current elapsed time.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @return The current elapsed time.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+    */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ getElapsed()}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Just return elapsed time.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ elapsed;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Moves the cannonball for the given time unit}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      based on its x and y velocities, and also}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      updates y velocity with respect to gravity.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param timeChange The change in time, in seconds.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+    */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ moveBall(}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ timeChange)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Updates the x and y positions based on their velocities.}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// The new x position would be x + x velocity * elapsed time.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      xPos += xVel * timeChange;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// The new y position would be y + y velocity * elapsed time.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      yPos += yVel * timeChange;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Then update the y velocity.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// The new y velocity is y velocity + gravity * elapsed time.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      yVel += GRAVITY_METERS_PER_SECONDS_SQUARED * timeChange;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Add the timeChange to the elapsed time.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      elapsed += timeChange;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Produces a string composed the given string}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+     repeated a given number of times.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param str The string to be repeated.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param times The number of times the string is repeated.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @return The given string repeated the given number of times.      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+    */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ String repeat(String str, }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ times)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Create an empty string. This will be the output string.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      String output = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f5
+""}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Loop the given number of times.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+for}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+(}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+int}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ i = 0; i < times; i++)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// In the loop, concatenate the given string to}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// the output string.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         output += str;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Once the loop is finished, return the output string.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ output;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Simulates a cannonball being fired given}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      the launch angle and initial velocity.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Displays a full simulation until cannonball}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      hits ground or the simulation runs out of time.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param launchAngle The launch angle of the cannonball, in degrees.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param initialVelocity The velocity of the cannonball, in meters per second.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+    */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ shoot(}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ launchAngle, }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ initialVelocity)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Calculate the x velocity, and store it.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      xVel = getComponentX(launchAngle, initialVelocity);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Calculate the y velocity, and store it.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      yVel = getComponentY(launchAngle, initialVelocity);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Loop while the current time is lesser or equal to}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// the max elapsed time, or while the y position}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// is greater than or equal to zero.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+while}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+(elapsed < (MAX_ELAPSED_SECONDS + EPSILON)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+            && yPos >= (0.0 - EPSILON))}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      \{  }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Display the location.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         displayLocation(elapsed, xPos, yPos);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Display the graphic.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         displayGraphic(yPos);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Update the cannonball's movement.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         moveBall(CLOCK_TICK_SECONDS);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Calculates the x component of a vector.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param angle The angle of the vector.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param velocity The magnitude of the vector.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @return The magnitude of the x component of the vector.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+    */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ getComponentX(}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ angle, }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ magnitude)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// The x component of velocity is}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// computed with velocity * cos(angle)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ magnitude * Math.cos(angle * DEGREES_TO_RADIANS);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Calculates the y component of a vector.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param angle The angle of the vector.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param velocity The magnitude of the vector.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @return The magnitude of the y component of the vector.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ getComponentY(}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ angle, }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ magnitude)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+  \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// The y component of velocity is}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// computed with velocity * sin(angle)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ magnitude * Math.sin(angle * DEGREES_TO_RADIANS);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+\}}{\rtlch \ltrch\loch
+\line \line }{\b\ab\rtlch \ltrch\loch
+CannonBallTester.java}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+import}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ java.util.Scanner;}{\afs20\rtlch \ltrch\loch\fs20
+\line \line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   A simple tester class for testing a CannonBall object.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   When run, the user is asked for an angle and velocity.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   A cannonball is then fired with those given parameters,}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   and the progress is printed to System.out.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   @author Gabriel Anderson}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   @version 1.0}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   @since November 30, 2014}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+class}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ CannonBallTester}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+\{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ MIN_ANGLE}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = 0.0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ MAX_ANGLE}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = 90.0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ MIN_VELOCITY}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = 0.0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ MAX_VELOCITY}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = 20.0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ String ASK_ANGLE_ECHO_FORMAT}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f5
+"Enter firing angle (%.1f-%.1f degrees): "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ String ASK_VELOCITY_ECHO_FORMAT}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f5
+"Enter firing velocity (%.1f-%.1f m/s): "}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ String OUT_OF_RANGE_ECHO_FORMAT}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f5
+"Value needs to from %.2f to %.2f. Try again."}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ String INVALID_INPUT_ECHO}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f5
+"Invalid input. Try again."}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+final}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ String PROGRAM_EXIT_ECHO}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      = }{\cf4\afs20\rtlch \ltrch\loch\fs20\loch\f5
+"Program exit."}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      The main method.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param args The arguments given to the program.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+    */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+public}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ main(String[] args)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Scanner in = }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ Scanner(System.in);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// Look at me, I'm super modular woo!}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ angle = askDouble(in,}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+                               ASK_ANGLE_ECHO_FORMAT,}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+                               MIN_ANGLE,}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+                               MAX_ANGLE);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ velocity = askDouble(in,}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+                               ASK_VELOCITY_ECHO_FORMAT,}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+                               MIN_VELOCITY,}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+                               MAX_VELOCITY);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      CannonBall cannon = }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+new}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ CannonBall();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      cannon.shoot(angle, velocity);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+  }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Asks the user for a double in the given range.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Prompts the user with input, and continues to}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      retry with the same prompt until a valid input is}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      entered that lies within the given range.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param in The scanner used to query input.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param prompt The message to prompt with.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+                    Must be formattable with two floats.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param low The lowest acceptable value.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @param high The highest acceptable value.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      @return A valid double entered by the user.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+    */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ askDouble(Scanner in, String prompt, }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ low, }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ high)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+while}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+(}{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+true}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         System.out.printf(prompt, low, high);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+// initialize with an invalid value}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+double}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ value = 0;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+try}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+            value = in.nextDouble();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+catch}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+(java.util.InputMismatchException e)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+            System.out.println(INVALID_INPUT_ECHO);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+            in.next();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+catch}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+(java.util.NoSuchElementException e)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+            programExit();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+catch}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+(java.lang.IllegalStateException e)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+            programExit();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+if}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+(low <= value && value <= high)}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+            }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+return}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ value;}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+        \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+else}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+            System.out.printf(OUT_OF_RANGE_ECHO_FORMAT, low, high);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+            System.out.println();}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+         \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+/**}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      Exits the program, and informs the user.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      For use when program abruptly needs to exit.}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf2\afs20\rtlch \ltrch\loch\fs20\loch\f5
+    */}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+private}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+static}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ }{\cf3\afs20\rtlch \ltrch\loch\fs20\loch\f5
+void}{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+ programExit()}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \{}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      System.out.println(PROGRAM_EXIT_ECHO);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+      System.exit(0);}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+   \}}{\afs20\rtlch \ltrch\loch\fs20
+\line }{\cf1\afs20\rtlch \ltrch\loch\fs20\loch\f5
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs40\rtlch \ltrch\loch\fs40
+Test Plan}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033{\afs24\rtlch \ltrch\loch\fs24
+Test the extremes. That is, when the angle and velocity are zero, and when the angle and velocity are 90 degrees and 20 m/s. Then, test to make sure the cannonball shoots properly, that is, the ball ends  when if the cannonball touches the ground (at least right before) or when the simulation runs out of time, which should be 2 seconds. A good angle for these test is 45. A good velocity for testing the first case is 10 m/s, as the cannon ball should touch the ground before time runs out. A good velocity for the second case would be 20 m/s, as the cannonball should stay in air long enough for the timer to run out. The tester will catch invalid inputs, such as numbers out of the range and strings and EOF, but test for these as well.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs40\rtlch \ltrch\loch\fs40
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af6\langfe2052\dbch\af7\afs24\alang1081\loch\f3\fs24\lang1033\afs40\rtlch \ltrch\loch\fs40
+
+\par }

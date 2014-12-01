@@ -4,8 +4,8 @@
    at a particular angle and initial velocity, assuming
    a constant velocity.
    @author Gabriel Anderson, Erickson Victor
-   @version 0.0
-   @since November 26, 2014
+   @version 1.0
+   @since November 30, 2014
  */
 public class CannonBall
 {
@@ -143,7 +143,7 @@ public class CannonBall
    public void moveBall(double timeChange)
    {
       // Updates the x and y positions based on their velocities.
-      
+
       // The new x position would be x + x velocity * elapsed time.
       xPos += xVel * timeChange;
       // The new y position would be y + y velocity * elapsed time.
