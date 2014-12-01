@@ -216,7 +216,7 @@ public class CannonBall
    /**
       Calculates the x component of a vector.
       @param angle The angle of the vector.
-      @param velocity The magnitude of the vector.
+      @param magnitude The magnitude of the vector.
       @return The magnitude of the x component of the vector.
     */
    private static double getComponentX(double angle, double magnitude)
@@ -229,7 +229,7 @@ public class CannonBall
    /**
       Calculates the y component of a vector.
       @param angle The angle of the vector.
-      @param velocity The magnitude of the vector.
+      @param magnitude The magnitude of the vector.
       @return The magnitude of the y component of the vector.
     */
    private static double getComponentY(double angle, double magnitude)
